@@ -1,0 +1,430 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 Not Found</title>
+
+<meta property="og:site_name" content="404 Not Found">
+<meta property="og:url" content="http:/utmn.ru/bitrix/templates/main/css/fonts/flexslider-icon.eot">
+
+<meta property="og:type" content="article">
+<meta property="og:description" content="Мы #1 по разработке свадебных сайтов. Потрясающие шаблоны, индивидуальный подход, быстрые сроки изготовления.">
+
+
+<meta itemprop="name" content="404 Not Found">
+<meta itemprop="description" content="Мы #1 по разработке свадебных сайтов. Потрясающие шаблоны, индивидуальный подход, быстрые сроки изготовления.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://it-wedding.com//bitrix/templates/main/css/fonts/flexslider-icon.eot">
+<meta name="twitter:domain" content="it-wedding.com">
+<meta name="twitter:title" content="404 Not Found">
+<meta name="twitter:description" content="Мы #1 по разработке свадебных сайтов. Потрясающие шаблоны, индивидуальный подход, быстрые сроки изготовления.">
+<meta name="author" content="It-wedding.com">
+
+<meta name="yandex-verification" content="61d765db02804c0c">
+
+<!--Fonts Online-->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+
+<!--Main-->
+<link rel="icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../images/apple-favicon.png">
+
+<link href="../css/bootstrap_1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/settings.css" media="screen">
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="../css/style_1.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="../css/styleNew.css">
+
+<link href="../css/responsive.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" id="color" href="../css/default.css">
+<!--Auth-->	
+<!--link href="/bitrix/templates/main/css/uikit.gradient.css" rel="stylesheet" type="text/css">
+<link href="/bitrix/templates/main/css/form-password.gradient.min.css" rel="stylesheet" type="text/css">
+<link href="/bitrix/templates/main/css/auth.css" rel="stylesheet" type="text/css"-->
+
+<!--Auth end-->	
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script async  src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script async  src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+<!--[if IE]>
+      <script async  src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '506917546330899');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=506917546330899&amp;ev=PageView&amp;noscript=1"></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="заказать свадебный сайт, купить свадебный сайт, свадьба, свадебные сайты, свадебный сайт, свадебный сайт приглашение, свадебное приглашение">
+<meta name="description" content="Мы #1 по разработке свадебных сайтов. Потрясающие шаблоны, индивидуальный подход, быстрые сроки изготовления.">
+<link href="../css/template_939ebc72d86893ae92e217bdfe940fc9_v1.css" type="text/css" data-template-style="true" rel="stylesheet">
+<meta property="og:image" content="../images/logo_1.png">
+<meta itemprop="image" content="/bitrix/templates/main/i/logo.png">
+<meta name="twitter:image:src" content="/bitrix/templates/main/i/logo.png">
+
+
+
+<script type="text/javascript" src="../js/template_23fdd3a2a3ba2dd666d742cd5ebc47f3_v1.js"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "cee9e2e26980627ea3a00d668c0f1f5d"]); _ba.push(["host", "it-wedding.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<!-- LOADER ===========================================-->
+<!--div id="loader">
+	<div class="loader"> <img src="/bitrix/templates/main/images/spin.svg" alt="" > </div>
+</div-->
+
+<!--HOME START===========================================-->
+
+<div id="sub-banner" data-stellar-background-ratio="0.2">
+  <div class="overlay">
+    <div class="container">
+      <div class="text">
+        <h1>404 Not Found</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page Wrap ===========================================-->
+<div id="wrap"> 
+  <!--======= HEADER =========-->
+  <header class="sticky">
+    <div class="container">
+      <div class="menu"> 
+        
+        <!--======= LOGO =========-->
+		  <div class="logo"><a href="//it-wedding.com"><img src="../images/logo_1.png" alt data-pin-nopin="true"></a></div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="fa fa-bars"></span> </button>
+        </div>
+                <!--======= NAV START =========-->
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+<ul class="nav navbar-nav">
+
+			<li class="active"><a href="/" class="in-li">Главная</a></li>
+	
+			<li><a href="/portfolio/" class="in-li">Портфолио</a></li>
+	
+			<li><a href="/templates/" class="in-li">Шаблоны свадебных сайтов</a></li>
+	
+			<li><a href="/blog/" class="in-li">Блог</a></li>
+	
+
+          </ul></div>
+        </nav>
+        <div class="clearfix"></div>
+              </div>
+    </div>
+  </header>
+	
+        	<div class="content">
+    		<div id="blog">
+    			<div class="container">
+        			<div class="br-wr">
+        			<b class="r0 top"></b><ul class="bread"><li><a href="/" title="Главная">Главная</a></li>&nbsp; / &nbsp;<li>404 Not Found</li></ul><b class="r0 bottom"></b>        			</div>
+            		</div>
+    	</div>
+    </div>
+    <!--======= CONTACT US =========-->
+<section id="contact">
+		<div class="contact-form"> 
+	<!--======= TITTLE =========-->
+		<div class="tittle">
+			<h2 class="wow fadeInUup" data-wow-duration="1s" data-wow-delay="0s">Обратная связь</h2>
+			<hr class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+			<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">Готовы сделать выбор в пользу современного подхода к оформлению свадебных приглашений?<br> Отлично, тогда свяжитесь с нами!</p>
+		</div>
+		<div class="container">
+			<div id="contact_message" class="success-msg">Спасибо! Ваше сообщение успешно отправлено! Мы постараемся ответить Вам в ближайшее время!</div>
+			<div id="error_message" class="error-msg"></div>
+			<form role="form" id="contact_form" method="post" onSubmit="return false" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+				<div class="row">
+					<div class="col-md-4">
+						<input type="text" class="form-control" name="name" id="name" placeholder="Имя">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control required email" name="email" id="email" placeholder=" Email">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form-control required" name="phone" id="phone" placeholder="Телефон">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="message">
+							<label> <br>
+							</label>
+							<textarea class="form-control" name="message" id="message" rows="5" placeholder="Сообщение / Предложение / Вопрос"></textarea>
+							<div class="col-md-4"><div class="g-recaptcha" data-sitekey="6LdHEwsUAAAAAKnJCbNiZC_60zC_UqZXORJcMiqr"></div></div>
+							<div class="col-md-4"><input type="submit" value="ОТПРАВИТЬ" class="btn btn-orange" id="btn_submit"></div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+		<div class="overlay">
+        <div class="container"> 
+          
+          <!--======= TITTLE =========-->
+          <div class="tittle">
+            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Контакты</h1>
+            <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">Для связи воспользуйтесь формой обратной связи, или любым удобным для Вас способом</p>
+          </div>
+          
+          <!--======= CONTACT INFO =========-->
+          <div class="con-info">
+            <ul class="row">
+                            <!--======= INQUIRY =========-->
+              <a href="mailto:yes@it-wedding.com"><li class="col-sm-3 wow bounce" data-wow-duration="1s" data-wow-delay="0.4s"> <i class="fa fa-envelope"></i>
+				  <h3>yes@it-wedding.com</h3>
+              </li></a>
+              
+              <!--======= TWITTER =========-->
+              <a href="http://vk.com/it_wedding" target="_blank"><li class="col-sm-3 wow bounce" data-wow-duration="1s" data-wow-delay="0.6s"> <i class="fa fa-vk"></i>
+				  <h3>it_wedding</h3>
+              </li></a>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="rights">
+      <div id="back-to-top"> <i class="fa fa-angle-up"></i> </div>
+      <div class="container">
+		  <p>2015 — 2022 © It-wedding. Все права защищены.</p>
+      </div>
+    </div>
+  </div>
+<div id="order-block" class="modal fade auth-form">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      
+		<div class="row row-flex">
+			<div class="col-md-6 bg-auth">
+				<div class="txt-wrp">
+					<div class="brand">It-wedding</div>
+					<div class="title">Оформление<br>заказа</div>
+					<div class="hr"></div>
+					<div class="but">BE CREATIVES</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="modal-body">
+				    <div id="popup-messageBlock" style="display:none;"></div>
+				    <form id="popup-form">
+				        <div class="form-order-wrp">
+				            <div class="inp-row">
+				                <label for="NAME">Имя</label>
+				                <input type="text" name="NAME" required class="inp-fields">
+				            </div>
+				            <div class="inp-row">
+				                <label for="EMAIL">Email</label>
+				                <input type="text" name="EMAIL" required class="inp-fields">
+				            </div>
+				            <div class="inp-row">
+				                <label for="PHONE">Телефон</label>
+				                <input type="text" name="PHONE" required class="inp-fields">
+				            </div>
+				            <div class="inp-row">
+				                <label for="pocket-type">Пакет услуг</label>
+				                <select name="TARIF" required>
+				                    <option value="Начальный">Начальный - 4900 руб.</option>
+				                    <option value="Стандартный" checked>Стандартный - 9900 руб.</option>
+				                    <option value="VIP">VIP - 50000 руб.</option>
+				                </select>
+				            </div>
+				            				            <div class="inp-row" style="margin-top: 20px;text-align: center;">
+				                <a href="#" id="send_order_form" class="new-format-button">Отправить заявку</a>
+				            </div>    
+				        </div>
+				    </form>
+				</div>
+			</div>
+		</div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="../js/jquery-1.9.1.min.js"></script> 
+<script src="../js/wow.min.js"></script> 
+<script src="../js/bootstrap.min_1.js"></script> 
+<script src="../js/jquery.stellar.min_1.js"></script> 
+<script src="../js/jquery.sticky.js"></script> 
+<script src="../js/jquery.isotope.min.js"></script> 
+<script src="../js/jquery.easing.1.3.js"></script> 
+<script src="../js/isotope.pkgd.min.js"></script>
+
+<!-- Auth-->
+<script src="../js/auth.js"></script> 
+<script src="../js/uikit.min.js"></script> 
+<script src="../js/form-password.min.js"></script>
+<!-- Auth end-->
+
+<script src="../js/jquery.flexslider-min.js"></script> 
+<script src="../js/waypoints.min.js"></script> 
+<script src="../js/owl.carousel.min.js"></script> 
+<script src="../js/smooth-scroll_1.js"></script> 
+
+<script src="../js/api.js"></script>
+
+<script type="text/javascript" src="../js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="../js/jquery.themepunch.revolution.min.js"></script> 
+
+<script src="../js/bootstrap-hover-dropdown.min.js"></script> 
+<script src="../js/main.js"></script> 
+<script type="text/javascript" src="../js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript">
+				jQuery(document).ready(function() {
+				    $("[name='PHONE']").mask("+7(999) 999-9999");
+					jQuery('.tp-banner').show().revolution(
+					{
+						dottedOverlay:"none",
+						delay:0,
+						startwidth:1170,
+						startheight:700,
+						hideThumbs:200,
+
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:5,
+						
+						navigationType:"bullet",
+						navigationArrows:"solo",
+						navigationStyle:"preview1",
+
+						touchenabled:"on",
+						onHoverStop:"on",
+						
+						swipe_velocity: 0.7,
+						swipe_min_touches: 1,
+						swipe_max_touches: 1,
+						drag_block_vertical: false,
+												
+						parallax:"mouse",
+						parallaxBgFreeze:"on",
+						parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+												
+						keyboardNavigation:"off",
+						
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset:0,
+						navigationVOffset:20,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
+								
+						shadow:0,
+						fullWidth:"on",
+						fullScreen:"on",
+
+						spinner:"spinner4",
+						
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+
+						shuffle:"off",
+						
+						autoHeight:"on",						
+						forceFullWidth:"off",						
+												
+												
+												
+						hideThumbsOnMobile:"off",
+						hideNavDelayOnMobile:1500,						
+						hideBulletsOnMobile:"off",
+						hideArrowsOnMobile:"off",
+						hideThumbsUnderResolution:0,
+						
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0,
+						videoJsPath:"rs-plugin/videojs/",
+						fullScreenOffsetContainer: ""
+					});
+					
+					
+					
+									
+				});	//ready
+				
+			</script>
+			<!-- Yandex.Metrika counter -->
+			<script type="text/javascript">
+				(function (d, w, c) {
+					(w[c] = w[c] || []).push(function() {
+						try {
+							w.yaCounter30726983 = new Ya.Metrika({
+								id:30726983,
+								clickmap:true,
+								trackLinks:true,
+								accurateTrackBounce:true,
+								webvisor:true
+							});
+						} catch(e) { }
+					});
+
+					var n = d.getElementsByTagName("script")[0],
+						s = d.createElement("script"),
+						f = function () { n.parentNode.insertBefore(s, n); };
+					s.type = "text/javascript";
+					s.async = true;
+					s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+					if (w.opera == "[object Opera]") {
+						d.addEventListener("DOMContentLoaded", f, false);
+					} else { f(); }
+				})(document, window, "yandex_metrika_callbacks");
+			</script>
+			<noscript><div><img src="https://mc.yandex.ru/watch/30726983" style="position:absolute; left:-9999px;" alt></div></noscript>
+			<!-- /Yandex.Metrika counter -->
+		<script data-skip-moving="true">
+        (function(w,d,u,b){
+                s=d.createElement('script');r=(Date.now()/1000|0);s.async=1;s.src=u+'?'+r;
+                h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn.bitrix24.ru/b3236703/crm/site_button/loader_4_bb2afw.js');
+    </script>
+        <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-183951-gkfyF';</script>
+</body>
+</html>
