@@ -498,28 +498,17 @@
 			$(".feedback-wrp .feedback .book-wrp .messages").mCustomScrollbar({scrollButtons:{enable: true}});
 
 			  DG.then(function () {
-                 map2 = DG.map('map', {
-                     center: [57.147229,65.553167],
-                     zoom: 14,
+				map = DG.map('map', {
+                     center: [54.857850,83.112557],
+                     zoom: 16,
                      scrollWheelZoom: false
                  });
-	         	mapCenter2 = map2.getCenter();
-	         	var myIcon2 = DG.icon({
-				    iconUrl: 'img/map-marker.png',
-				    iconRetinaUrl: 'img/map-marker.png',
-				    iconSize: [43, 63],
-				    iconAnchor: [22, 31],
-				    popupAnchor: [0, 0],
-				    // shadowUrl: '',
-				    // shadowRetinaUrl: '',
-				    // shadowSize: [68, 95],
-				    // shadowAnchor: [22, 94]
-				});
-				var myIcon2 = DG.icon({
-				    iconUrl: 'img/map-marker.png',
-				    iconRetinaUrl: 'map-marker.png',
-				    iconSize: [43, 63],
-				    iconAnchor: [22, 31],
+	         	mapCenter = map.getCenter();
+	         	var myIcon = DG.icon({
+				    iconUrl: 'images/map-marker.png',
+				    iconRetinaUrl: 'images/map-marker.png',
+				    iconSize: [39, 60],
+				    iconAnchor: [20, 55],
 				    popupAnchor: [0, 0],
 				    // shadowUrl: '',
 				    // shadowRetinaUrl: '',
@@ -527,13 +516,13 @@
 				    // shadowAnchor: [22, 94]
 				});
 
-             		DG.marker([57.147229,65.553167], {icon: myIcon2}).addTo(map2).bindPopup("Ресторан<br /> <p style=\"text-align:center;\">ЧАЙКА</p>");
-            	 	DG.marker([57.147229,65.59350], {icon: myIcon2}).addTo(map2).bindPopup("<p style=\"text-align:center;\">ЗАГС</p> <p style=\"text-align:center;\">Жемчужный зал</p>");
+             		DG.marker([54.857850,83.112557], {icon: myIcon}).addTo(map).bindPopup("Банкетный зал<br /> <p style=\"text-align:center;\">ТЕПЛИЦА</p>");
+            	 	DG.marker([54.842867,83.091723], {icon: myIcon}).addTo(map).bindPopup("<p style=\"text-align:center;\">Фотоплощадка</p> <p style=\"text-align:center;\">НГУ</p>");
     			$(".zags").click(function(event) {
-                	 	map2.panTo([57.147229,65.553167]);
+                	 	map.panTo([54.842867,83.091723]);
 				 });
 				 $(".rest").click(function(event) {
-                	 	map2.panTo([57.147229,65.59350]);
+                	 	map.panTo([54.857850,83.112557]);
 				 });
             });
 
