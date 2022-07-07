@@ -160,13 +160,13 @@
 	</div>
 	<div id="questioning" class="questioning-wrp">
 		<div class="questioning">
-			<form action="#">
+			<form id="response-form" action="#">
 				<div class="row inp-radio">
 					<div class="col-md-6 col-left clear">
-						<label>Конечно, мы будем!<input type="radio" name="group1"></label>
+						<label>Конечно, мы будем!<input id="agree" type="radio" name="group1"></label>
 					</div>
 					<div class="col-md-6 col-right clear">
-						<label>Мы не придем<input type="radio" name="group1"></label>
+						<label>Мы не придем<input id="disagree" type="radio" name="group1"></label>
 					</div>
 				</div>
 				<div class="info">Пожалуйста, чтобы все прошло идеально,<br> ответьте еще на несколько <span>вопросов</span></div>
@@ -502,6 +502,48 @@
 		      });
 		      return false;
 		   });
+		   
+			$('#response-form').submit(function(e) {
+				//prevent the form from submiting so we can post to the google form
+				e.preventDefault();
+				//AJAX request
+
+				var name = "пупа и лупа";
+				var agree = "не указано";
+				var food = "вкусное что-нибудь";
+
+				if ($('#agree')[0].checked) {
+					agree = "да";
+				}
+				else if ($('#disagree')[0].checked) {
+					agree = "нет";
+				}
+
+				alert($('#response-form').serialize())
+				
+				$.ajax({
+					url: `https://docs.google.com/forms/d/e/1FAIpQLSerqAotjN9abitkmGSRQMMruUxyYrvaLahprkAg0lz5ovuG-Q/formResponse?entry.717844149=${name}&entry.1597264985=${agree}&entry.1597468061=${food}`,     //The public Google Form url, but replace /view with /formResponse
+	//				data: $('#response-form').serialize(), //Nifty jquery function that gets all the input data
+					type: 'POST', //tells ajax to post the data to the url
+					dataType: "json", //the standard data type for most ajax requests
+					statusCode: { //the status code from the POST request
+					0: function(data) { //0 is when Google gives a CORS error, don't worry it went through
+						//success
+						alert('success 0');
+	//					$('#form-success').text('hooray!');
+					},
+					200: function(data) {//200 is a success code. it went through!
+						//success
+						alert('success 200');
+	//					$('#form-success').text('hooray!');
+					},
+					403: function(data) {//403 is when something went wrong and the submission didn't go through
+						//error
+						alert('Oh no! something went wrong. we should check our code to make sure everything matches with Google');
+					}
+					}  
+				});
+			});
 		});
 
 
