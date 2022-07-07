@@ -1000,7 +1000,7 @@ body .row {
 .map-wrp {
 	position: relative;
 	display: block;
-	min-height: 1163px;
+	min-height: 1000px;
 	margin-top: 0px;
 	padding-top: 219px;
 	background: url(../images/map-bg.png) no-repeat top center;
