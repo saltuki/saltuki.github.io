@@ -665,26 +665,15 @@ body .row {
 	clear: both;
 	margin-bottom: 15px;
 }
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-radio {
-	width: 33.33%;
-	float: left;
-	margin-bottom: 15px;
-}
+
 .inviting-wrp .questioning-wrp .questioning .row.radios .quest-text {
 	float: left;
 }
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-text input {
-	padding-left: 10px;
-	width: 150px;
-	border: none;
-	border-bottom: 1px dashed #333;
-	font-weight: normal;
-	background-color: transparent;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-radio label {
+
+.inviting-wrp .questioning-wrp .questioning .row.radios .answer label {
 	font-weight: normal;
 }
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-radio label:before {
+.inviting-wrp .questioning-wrp .questioning .row.radios .answer label:before {
 	position: relative;
 	display: inline-block;
 	width: 18px;
@@ -694,8 +683,8 @@ body .row {
 	content: "";
 	background: url(../images/check.png) no-repeat 0 0;
 }
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-radio label:hover:before,
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-radio label.checked:before {
+.inviting-wrp .questioning-wrp .questioning .row.radios .answer label:hover:before,
+.inviting-wrp .questioning-wrp .questioning .row.radios .answer label.checked:before {
 	background: url(../images/check.png) no-repeat -18px 0;
 }
 .inviting-wrp .questioning-wrp .questioning .row.submit {
@@ -1057,10 +1046,18 @@ body .row {
 }
 
 .questionnaire {
-	display: flex;
+	display: grid;
+	flex-wrap: wrap;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px 30px
 }
 
 .questionnaire .question {
 	display: flex;
 	flex-direction: column;
+}
+
+.questionnaire .name {
+	font-size: 20px;
 }
