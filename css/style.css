@@ -210,12 +210,13 @@ body .row {
     display: block;
     width: 250px;
     top: 40px;
-    left: 128px;
+    left: 100px;
 	font-family: Cera;	
 	font-size: 40px;
 	color: #FFF;
 	text-transform: uppercase;
 }
+
 .header-wrp .menu-wrp ul.menu {
 	position: absolute;
     left: 393px;
@@ -1000,7 +1001,7 @@ body .row {
 	position: relative;
 	display: block;
 	min-height: 1163px;
-	margin-top: -207px;
+	margin-top: 0px;
 	padding-top: 219px;
 	background: url(../images/map-bg.png) no-repeat top center;
 	overflow: hidden;
@@ -1053,4 +1054,13 @@ body .row {
 	display: block;
 	text-align: center;
     margin-top: 200px;
+}
+
+.questionnaire {
+	display: flex;
+}
+
+.questionnaire .question {
+	display: flex;
+	flex-direction: column;
 }
