@@ -172,7 +172,7 @@
 				<div class="info">Пожалуйста, чтобы все прошло идеально,<br> ответьте еще на несколько <span>вопросов</span></div>
 				<div class="row radios">
 
-					<div class="questionnaire">
+					<div class="questionnaire" style="display: none;">
 						<div class="question">
 							<div class="name">Какой салат кушац будешь?</div>
 							<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат греческий с рассольным сыром</label></div>
@@ -183,15 +183,27 @@
 
 						<div class="question">
 							<div class="name">Какое горячее вкусить изволите?</div>
-							<div class="answer"><label><input type="radio" name="group3" class="radios-check">Стейк из </label></div>
-							<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
-							<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
-							<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
+							<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из семги с соусом Тар-Тар</label></div>
+							<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из копченой свинины с чесночным соусом</label></div>
+							<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Медальоны из цыпленка с соусом BBQ</label></div>
+							<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из индейки с соусом BBQ</label></div>
+						</div>
+
+						<div class="question">
+							<div class="name">Цвет какого винца вам больше по душе?</div>
+							<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Красное</label></div>
+							<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Белое</label></div>
+							<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Пьем все!</label></div>
+						</div>
+						<div class="question">
+							<div class="name">А что по сладости?</div>
+							<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Люблю по суше</label></div>
+							<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Люблю по слаще</label></div>
+							<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Пьем все!</label></div>
 						</div>
 					</div>
 
-
-					<div class="col-md-4 food clear">
+					<!-- <div class="col-md-4 food clear">
 						<div class="name">Какой салат кушац будешь?</div>
 						<div class="quest-radio"><label><input type="radio" name="group3" class="radios-check">Салат греческий с рассольным сыром</label></div>
 						<div class="quest-radio"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
@@ -205,18 +217,13 @@
 						<div class="quest-radio"><label><input type="radio" name="group4" class="radios-check">виски</label></div>
 						<div class="quest-radio"><label><input type="radio" name="group4" class="radios-check">другое</label></div>
 						<div class="quest-text"><label><input type="text" name="group4-other" class="text-check"></label></div>
-					</div>
+					</div> -->
 				</div>
-				<div class="info">Если вы едете на своем авто, укажите количество свободных мест <input type="text" name="freecar"></div>
+				<!-- <div class="info">Если вы едете на своем авто, укажите количество свободных мест <input type="text" name="freecar"></div> -->
 				<div class="row submit">
 					<div class="col-md-6 col-left clear"><input type="text" name="contact" placeholder="тел. / e-mail"></div>
 					<div class="col-md-6 col-right clear"><input type="submit" value="Подтвердить"></div>
 				</div>
-
-				<div>
-					<input type="radio" id="louie" name="drone" value="louie">
-					<label for="louie">test</label>
-				  </div>
 			</form>
 		</div>
 	</div>
@@ -400,6 +407,10 @@
 
 	<script type="text/javascript">
 
+function btnSearch_Click() {
+         alert("hello");
+       }
+
 		jQuery(document).ready(function($) {
 			jQuery.stellar({
 				horizontalScrolling: false,
@@ -415,26 +426,24 @@
 			  if ($(this).is(':checked')) {
 			  	$('.inp-radio input:radio').closest('label').removeClass("checked");
 			    $(this).closest('label').addClass('checked');
+
+				if ($(this).is("#agree")) {
+					$('.questionnaire')[0].style = "display: grid"
+					console.log($('.questionnaire')[0])
+				} else {
+					$('.questionnaire')[0].style = "display: none"
+				}
+
 			  }
 			});
-			$('.car input:radio').change(function() {
+			$('.questionnaire input:radio').change(function() {
 			  if ($(this).is(':checked')) {
-			  	$('.car input:radio').closest('label').removeClass("checked");
+				console.log("wqe")
+			  	$('.questionnaire input:radio').closest('label').removeClass("checked");
 			    $(this).closest('label').addClass('checked');
 			  }
 			});
-			$('.food input:radio').change(function() {
-			  if ($(this).is(':checked')) {
-			  	$('.food input:radio').closest('label').removeClass("checked");
-			    $(this).closest('label').addClass('checked');
-			  }
-			});
-			$('.drink input:radio').change(function() {
-			  if ($(this).is(':checked')) {
-			  	$('.drink input:radio').closest('label').removeClass("checked");
-			    $(this).closest('label').addClass('checked');
-			  }
-			});
+			
 
 
 			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
@@ -604,6 +613,9 @@
 		var greeting = document.getElementById("greeting");
 		guestName.innerHTML = guestData.guestName;
 		greeting.innerHTML = guestData.greeting;
+
+
+	
 
 
 	</script>
