@@ -634,8 +634,8 @@ body .row {
 	color: #FD4D65;
 	text-decoration: underline;
 }
-.inviting-wrp .questioning-wrp .questioning .info input {
-	width: 50px;
+.inviting-wrp .questioning-wrp .questioning .name input {
+	width: 100px;
 	padding-left: 10px;
 	border: none;
 	border-bottom: 1px dashed #333;
@@ -1049,8 +1049,35 @@ body .row {
 	display: grid;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	gap: 10px 30px
+}
+
+.question.salad {
+	grid-row: 1;
+	grid-column: 1;
+
+}
+
+.question.main-dish {
+	grid-row: 1;
+	grid-column: 2;
+
+}
+.question.wine-color {
+	grid-row: 2;
+	grid-column: 1;
+
+}
+.question.wine-taste {
+	grid-row: 2;
+	grid-column: 2;
+}
+
+.question.name {
+	grid-column: 1 / 2;
+	grid-row: 3;
+	justify-self: center;
 }
 
 .questionnaire .question {
@@ -1060,4 +1087,5 @@ body .row {
 
 .questionnaire .name {
 	font-size: 20px;
+	height: 50px;
 }
