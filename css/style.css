@@ -499,7 +499,7 @@ body .row {
 .inviting-wrp .inviting .letter-wrp .title {
 	font-family: CeraB;
 	font-size: 38px;
-	color: #fc5866;
+	color: #B8DA9D;
 	line-height: 45px;
 }
 .inviting-wrp .inviting .letter-wrp .inv-text {
@@ -566,125 +566,6 @@ body .row {
     background: #FFF;
     top: 45px;
     left: 478px;
-}
-.inviting-wrp .questioning-wrp {
-	position: relative;
-	display: block;
-	min-height: 710px;
-	padding-top: 65px;
-	padding-bottom: 65px;
-}
-.inviting-wrp .questioning-wrp .questioning {
-	position: relative;
-}
-.inviting-wrp .questioning-wrp .questioning .row.inp-radio .col-md-6 label {
-	position: relative;
-	display: block;
-	width: 242px;
-	height: 50px;
-	font-family: GilroyLight;
-	font-size: 18px;
-	line-height: 46px;
-	font-weight: normal;
-	color: #1F1F1F;
-	text-align: center;
-	border: 1px solid #b8b8b8;
-	background: #fff;
-	-webkit-transition: all 0.5s ease 0s;
-	   -moz-transition: all 0.5s ease 0s;
-	    -ms-transition: all 0.5s ease 0s;
-	     -o-transition: all 0.5s ease 0s;
-	        transition: all 0.5s ease 0s;
-}
-.inviting-wrp .questioning-wrp .questioning .row .col-md-6 label:hover,
-.inviting-wrp .questioning-wrp .questioning .row .col-md-6 label.checked {
-	border: 0px;
-	background: rgba(246,160,102,1);
-	background: -moz-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(246,160,102,1)), color-stop(100%, rgba(254,83,111,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-	background: linear-gradient(135deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a066', endColorstr='#fe536f', GradientType=1 );
-	color: #fff;
-}
-.inviting-wrp .questioning-wrp .questioning .row.inp-radio {
-	margin-top: 73px;
-}
-.inviting-wrp .questioning-wrp .questioning .row.inp-radio .col-md-6.col-left label {
-	float: right;
-	margin-right: 50px;
-}
-.inviting-wrp .questioning-wrp .questioning .row.inp-radio .col-md-6.col-right label {
-	float: left;
-	margin-left: 50px;
-}
-.inviting-wrp .questioning-wrp .questioning .info {
-	position: relative;
-	display: block;
-	font-family: GilroyLight;	
-	font-size: 16px;
-	color: #1f1f1f;
-	text-align: center;
-	margin-top: 45px;
-}
-.inviting-wrp .questioning-wrp .questioning .info span {
-	color: #FD4D65;
-	text-decoration: underline;
-}
-.inviting-wrp .questioning-wrp .questioning .name input {
-	width: 100px;
-	padding-left: 10px;
-	border: none;
-	border-bottom: 1px dashed #333;
-	background-color: transparent;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios {
-	position: relative;
-	display: block;
-	width: 800px;
-	margin: 45px auto 0;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios {
-	font-family: GilroyLight;
-	font-size: 16px;
-	color: #333;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios .col-md-4 {
-	padding-right: 25px;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios .col-md-4:last-child {
-	margin-bottom: 0;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios .name {
-	position: relative;
-	display: block;
-	width: 100%;
-	clear: both;
-	margin-bottom: 15px;
-}
-
-.inviting-wrp .questioning-wrp .questioning .row.radios .quest-text {
-	float: left;
-}
-
-.inviting-wrp .questioning-wrp .questioning .row.radios .answer label {
-	font-weight: normal;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios .answer label:before {
-	position: relative;
-	display: inline-block;
-	width: 18px;
-	height: 19px;
-    top: 5px;
-    margin-right: 5px;
-	content: "";
-	background: url(../images/check.png) no-repeat 0 0;
-}
-.inviting-wrp .questioning-wrp .questioning .row.radios .answer label:hover:before,
-.inviting-wrp .questioning-wrp .questioning .row.radios .answer label.checked:before {
-	background: url(../images/check.png) no-repeat -18px 0;
 }
 .inviting-wrp .questioning-wrp .questioning .row.submit {
 	margin-top: 50px;
@@ -1046,6 +927,7 @@ body .row {
 
 
 .questionnaire-holder {
+	font-family: GilroyLight;
 	width: 1000px;
 	display: flex;
 	flex-flow: column;
@@ -1061,6 +943,19 @@ body .row {
 
 .comming-intention-option {
 	width: 300px;
+
+	font-size: 18px;
+	line-height: 46px;
+	font-weight: normal;
+	color: #1F1F1F;
+	text-align: center;
+	border: 1px solid #b8b8b8;
+	background: #fff;
+	-webkit-transition: all 0.5s ease 0s;
+	   -moz-transition: all 0.5s ease 0s;
+	    -ms-transition: all 0.5s ease 0s;
+	     -o-transition: all 0.5s ease 0s;
+	        transition: all 0.5s ease 0s;
 }
 
 .questioning-custom {
@@ -1125,4 +1020,48 @@ body .row {
 .submit-questionnarie {
 	display: flex;
 	justify-content: center;
+}
+
+.questionnaire-holder .comming-intention .comming-intention-option label:hover,
+.questionnaire-holder .comming-intention .comming-intention-option label.checked {
+	border: 0px;
+	background: rgba(246,160,102,1);
+	/* background: -moz-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%); */
+	/* background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(246,160,102,1)), color-stop(100%, rgba(254,83,111,1))); */
+	background: -webkit-linear-gradient(-45deg, rgba(141,168,132,1) 0%, rgba(56,87,35,1) 100%);
+	/* background: -o-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
+	background: linear-gradient(135deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%); */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a066', endColorstr='#fe536f', GradientType=1 );
+	color: #fff;
+}
+
+/* .questionnaire-holder .questioning-custom .questions-form .questionnaire .question label:hover, */
+
+.questionnaire-holder .comming-intention .comming-intention-option label {
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.questionnaire-holder .questions-form .name input {
+	width: 100px;
+	padding-left: 10px;
+	border: none;
+	border-bottom: 1px dashed #333;
+	background-color: transparent;
+}
+
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label:before {
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 19px;
+    top: 5px;
+    margin-right: 5px;
+	content: "";
+	background: url(../images/check.png) no-repeat 0 0;
+}
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label:hover:before,
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label.checked:before {
+	background: url(../images/check.png) no-repeat -18px 0;
 }
