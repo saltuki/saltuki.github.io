@@ -474,7 +474,6 @@ body .row {
 .inviting-wrp {
 	position: relative;
 	display: block;
-	height: 2000px;
 	margin-top: -215px;
 	background: url(../images/inviting-bg.png) no-repeat top center;
 }
