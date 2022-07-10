@@ -1045,39 +1045,42 @@ body .row {
     margin-top: 200px;
 }
 
+
+.questionnaire-holder {
+	width: 1000px;
+	display: flex;
+	flex-flow: column;
+	margin: 0 auto;
+}
+
+.comming-intention {
+	display: flex;
+	/* width: 700px; */
+	margin: 20px auto;
+	justify-content: space-between; 
+}
+
+.comming-intention-option {
+	width: 300px;
+}
+
+.questioning-custom {
+	display: flex;
+	flex-direction: column;	
+	width: 900px;
+	margin: 50px auto;
+}
+
+.questioning-custom .info {
+	margin: 10px auto;
+}
+
 .questionnaire {
 	display: grid;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	gap: 10px 30px
-}
-
-.question.salad {
-	grid-row: 1;
-	grid-column: 1;
-
-}
-
-.question.main-dish {
-	grid-row: 1;
-	grid-column: 2;
-
-}
-.question.wine-color {
-	grid-row: 2;
-	grid-column: 1;
-
-}
-.question.wine-taste {
-	grid-row: 2;
-	grid-column: 2;
-}
-
-.question.name {
-	grid-column: 1 / 2;
-	grid-row: 3;
-	justify-self: center;
 }
 
 .questionnaire .question {
@@ -1085,7 +1088,42 @@ body .row {
 	flex-direction: column;
 }
 
+.question.name {
+	color: #db3b5d;
+	margin: 10px auto;
+}
+
+.question.salad {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.question.main-dish {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.question.wine-color {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.question.wine-taste {
+	grid-row: 2;
+	grid-column: 2;
+}
+
 .questionnaire .name {
 	font-size: 20px;
 	height: 50px;
+}
+
+.questions-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.submit-questionnarie {
+	display: flex;
+	justify-content: center;
 }
