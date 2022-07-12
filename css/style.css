@@ -549,22 +549,27 @@ body .row {
 }
 .inviting-wrp .inviting {
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: space-around;
 	min-height: 1197px;
 }
 .inviting-wrp .inviting .letter-wrp {
 	position: relative;
 	display: block;
-	width: 650px;
-	height: 850px;
+	width: 90%;
+	min-width: 50rem;
+	height: 75rem;
 	top: 347px;
-	background: url(../images/marker.png) no-repeat 21px 0px #FFF;
+	background: #FFF;
 	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
 	        box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
 }
+
 .inviting-wrp .inviting .letter-wrp .letter {
-	padding-left: 108px;
-    padding-top: 82px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 5rem 5rem 0 5rem;
 }
 .inviting-wrp .inviting .letter-wrp .title {
 	font-family: CeraB;
@@ -574,8 +579,8 @@ body .row {
 }
 .inviting-wrp .inviting .letter-wrp .inv-text {
 	position: relative;
-	margin-top: 66px;
-	width: 490px;
+	margin-top: 2rem;
+	width: 90%;
 	font-family: GilroyLight;
 	font-size: 19px;
 	color: #333;
@@ -587,46 +592,75 @@ body .row {
 .inviting-wrp .inviting .letter-wrp .dots {
 	position: relative;
 	display: flex;
-	left: -40px;
-	margin-top: 115px;
-	-webkit-flex-flow: row;
-	    -ms-flex-flow: row;
-	        flex-flow: row;
-	-webkit-flex-wrap: nowrap;
-	    -ms-flex-wrap: nowrap;
-	        flex-wrap: nowrap;
-	-webkit-justify-content: space-around;
-	        justify-content: space-around;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3rem;
+	justify-content: space-between;
 }
 .inviting-wrp .inviting .letter-wrp .dots .dot {
-	width: 58px;
-	height: 56px;
-	overflow: hidden;	
-	background: url(../images/dots.png) no-repeat;
-}
+	height: 6.5rem;
+	width: 6.5rem;
+	border-radius: 50%;
+	display: inline-block;
+ }
+ 
+ 
 .inviting-wrp .inviting .letter-wrp .dots .dot1 {
-	background-position: 0 0;
+	background-color: #385723
 }
+
 .inviting-wrp .inviting .letter-wrp .dots .dot2 {
-	background-position: -58px 0;
+	background-color: #566e4e
 }
 .inviting-wrp .inviting .letter-wrp .dots .dot3 {
-	background-position: -116px 0;
+	background-color: #8da884
 }
 .inviting-wrp .inviting .letter-wrp .dots .dot4 {
-	background-position: -174px 0;
+	background-color: #ffffff;
+	border-style: solid;
 }
+
+.inviting-wrp .inviting .letter-wrp .dots .dot5 {
+	background-color: #d3b99c
+}
+
+@media (min-width: 700px) {
+	.inviting-wrp .inviting .letter-wrp {
+		background: url(../images/marker.png) no-repeat 21px 0px #FFF;
+	}
+	.inviting-wrp .inviting .letter-wrp {
+		width: 65rem;
+	}
+
+	.inviting-wrp .inviting .letter-wrp .letter {
+		padding-left: 108px;
+		padding-top: 82px;
+
+		align-items: flex-start;
+
+		margin: 0;
+	}
+}
+
 .inviting-wrp .inviting > .title {
 	position: absolute;
     display: block;
-    right: -206px;
-    top: 523px;
+    right: -10rem;
+    top: 525px;
     font-family: CeraB;
-    font-size: 60px;
+    font-size: 6rem;
     color: #FFF;
     text-transform: uppercase;
 	transform: rotate(90deg);
+	visibility: hidden;
 }
+
+@media (min-width: 65rem) {
+	.inviting-wrp .inviting > .title {
+		visibility: visible;
+	}
+}
+
 .inviting-wrp .inviting > .title:after {
 	position: absolute;
     display: block;
