@@ -199,6 +199,8 @@ body .row {
 	height: 12.2rem;
 	background: url(../images/logo.png) no-repeat left center;
 	background-size: 13rem 6.6rem;
+	background-position: 0 0;
+	
 	flex-shrink: 0;
 }
 
@@ -218,7 +220,7 @@ body .row {
 	text-transform: uppercase;
 
 	width: 20rem;
-	top: 4rem;
+	top: 2.2rem;
 	left: 5rem;
 	font-size: 2.5rem;
 }
@@ -226,14 +228,21 @@ body .row {
 @media (min-width:700px) {
 	.header-wrp .menu-wrp .logo .names  {
 		width: 25rem;
-		top: 3.5rem;
+		top: 2.2rem;
 		left: 10rem;
 		font-size: 4rem;
 	}
 }
 
 .header-wrp .menu-wrp .links {
-	align-self: center;
+	visibility: hidden;
+}
+
+@media (min-width: 70rem) {
+	.header-wrp .menu-wrp .links {
+		visibility: visible;
+		align-self: center;
+	}
 }
 
 .header-wrp .menu-wrp ul.menu {
