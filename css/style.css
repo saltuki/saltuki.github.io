@@ -149,18 +149,7 @@ ul {
 	padding: 0;
 	margin: 0;
 }
-/* clear */
-.clear:before,
-.clear:after {
-	content:' ';
-	display:table;
-}
-.clear:after {
-	clear:both;
-}
-.clear {
-	*zoom:1;
-}
+
 body {
 	background: #FFF;
 	width: 100%;
@@ -324,63 +313,85 @@ body .row {
 }
 .face-programm-wrp .face-programm {
 	position: relative;
-	display: block;
+	display: flex;
+	flex-direction: column;
 }
 .face-programm-wrp .face-programm .faces-wrp {
-	margin-top: -46px;
 	min-height: 725px;
 	background: #FFF;
-	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
-	        box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
 	z-index: 2;
+	
 }
-.face-programm-wrp .face-programm .faces .col-xs-6 {
-	padding-top: 98px;
+
+@media (min-width: 1000px) {
+	.face-programm-wrp .face-programm .faces-wrp {
+		width: 1000px;
+		margin: 0 auto;
+	}
 }
-.face-programm-wrp .face-programm .faces .col-xs-6 .photo {
+
+.face-programm-wrp .face-programm .faces {
+	display: flex;
+	padding-top: 9.8rem;
+	justify-content: space-around;
+}
+
+.face-programm-wrp .face-programm .faces .person {
+	display: flex;
+	flex-direction: column;
+}
+
+.face-programm-wrp .face-programm .faces .photo {
 	position: relative;
 	display: block;
-	width: 185px;
-	height: 185px;
+	width: 18.5rem;
+	height: 18.5rem;
 	margin: 0 auto;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 	        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 	-webkit-border-radius: 250px;
 	        border-radius: 250px;
 }
-.face-programm-wrp .face-programm .faces .col-xs-6 .name {
+.face-programm-wrp .face-programm .faces .name {
 	font-family: CeraB;
-	font-size: 50px;
-	color: #db3b5d;
+	font-size: 5rem;
+	color: #B8DA9D;
 	text-align: center;
 }
-.face-programm-wrp .face-programm .faces .col-xs-6 .sec-name {
+.face-programm-wrp .face-programm .faces .role {
 	font-family: Cera;
 	font-size: 22px;
-	color: #433441;
+	color: #4A4737;
 	text-align: center;
 	text-transform: lowercase;
 }
-.face-programm-wrp .face-programm .faces .col-xs-6 .info {
+.face-programm-wrp .face-programm .faces .info {
 	position: relative;
-	width: 320px;
-	margin: 70px auto 0;
+	margin: 3rem 2rem 0 2rem;
 	font-family: Cera;
-	font-size: 16px;
-	color: #433441;
+	font-size: 1.6rem;
+	color: #4A4737;
 	text-align: center;
 }
 .face-programm-wrp .face-programm .programm-wrp {
 	position: relative;
-	display: block;
-	margin-top: 310px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 31rem;
 }
+
+.face-programm-wrp .face-programm .programm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .face-programm-wrp .face-programm .programm-wrp .programm > .title {
 	position: relative;
-	margin-bottom: 67px;
+	margin-bottom: 5rem;
 	font-family: CeraB;
-	font-size: 48px;
-	color: #DB3B5D;
+	font-size: 5rem;
+	color: #8da884;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -389,11 +400,12 @@ body .row {
     display: block;
     width: 5000px;
     height: 1px;
-    background: #DB3B5D;
+    background: #8da884;
     content: "";
-    right: 575px;
-    top: 37px;
+    right: 35rem;
+    top: 3.5rem;
 }
+
 .face-programm-wrp .face-programm .programm-wrp .programm .rows-wrp {
 	background: #FFF;	
 }
@@ -401,14 +413,22 @@ body .row {
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row {
 	min-height: 147px;
     padding-bottom: 10px;
+	display: flex;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info .title {
 	position: relative;
 	display: block;
 	font-family: Cera;
-	font-size: 29px;
+	font-size: 16px;
 	color: #333;
 }
+
+@media (min-width: 800px) {
+	.face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info .title {
+		font-size: 29px;
+	}
+}
+
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row > div {
 	float: left;
 }
@@ -416,6 +436,7 @@ body .row {
 	width: 115px;
 	line-height: 29px;
 	text-align: right;
+	flex-shrink: 0;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .date-wrp .date {
 	font-family: Cera;
@@ -423,16 +444,16 @@ body .row {
 	color: #7C7C7C;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+1) .date-wrp .time {
-	color: #f0475f;
+	color: #385723;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+2) .date-wrp .time {
-	color: #f0514a;
+	color: #566e4e;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+3) .date-wrp .time {
-	color: #f5624f;
+	color: #8da884;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+4) .date-wrp .time {
-	color: #f77653;
+	color: #ACBD86;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .date-wrp .time {
 	font-family: Cera;
@@ -443,20 +464,21 @@ body .row {
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .dot {
 	position: relative;
 	display: block;
+	flex-shrink: 0;
 	width: 130px;
 	height: 1px;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+1) .dot .dot-one {
-	background: #f0475f;
+	background: #385723;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+2) .dot .dot-one {
-	background: #f0514a;
+	background: #566e4e;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+3) .dot .dot-one {
-	background: #f5624f;
+	background: #8da884;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+4) .dot .dot-one {
-	background: #f77653;
+	background: #ACBD86;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .dot .dot-one {
 	position: relative;
@@ -496,11 +518,7 @@ body .row {
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:last-child .dot .dot-one:after {
 	content: none;
 }
-.face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info .title {
-	font-family: Cera;
-	font-size: 29px;
-	color: #333;
-}
+
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info .info-add {
 	font-family: Cera;
 	font-size: 16px;
@@ -508,20 +526,21 @@ body .row {
 	line-height: 30px;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+1) .info a {
-	color: #f0475f;
+	color: #385723;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+2) .info a {
-	color: #f0514a;
+	color: #566e4e;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+3) .info a {
-	color: #f5624f;
+	color: #8da884;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+4) .info a {
-	color: #f77653;
+	color: #ACBD86;
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info a {
-	color: #f0514b;
+	color: #ACBD86;
 }
+
 .inviting-wrp {
 	position: relative;
 	display: block;
