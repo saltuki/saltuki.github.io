@@ -840,7 +840,7 @@ body .row {
 	display: block;
 	min-height: 1000px;
 	margin-top: 0px;
-	padding-top: 219px;
+	padding-top: 10rem;
 	background: url(../images/map-bg.png) no-repeat top center;
 	overflow: hidden;
 }
@@ -852,7 +852,7 @@ body .row {
     margin-bottom: 67px;
     font-family: CeraB;
     font-size: 48px;
-    color: #DB3B5D;
+    color: #8da884;
     text-transform: uppercase;
     text-align: left;
 }
@@ -861,7 +861,7 @@ body .row {
     display: block;
     width: 5000px;
     height: 1px;
-    background: #DB3B5D;
+    background: #8da884;
     content: "";
     left: 417px;
     top: 37px;
@@ -869,9 +869,9 @@ body .row {
 .map-wrp .map #map {
 	position: relative;
 	display: block;
-	width: 800px;
+	width: 400px;
 	height: 390px;
-	margin-bottom: 25px;
+	margin: 0 auto 25px;
 	-webkit-box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
     box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
 	z-index: 2;
@@ -892,6 +892,18 @@ body .row {
 	display: block;
 	text-align: center;
     margin-top: 200px;
+}
+
+@media (min-width: 700px) {
+	.map-wrp .map #map {
+		width: 65rem;
+	}
+}
+
+@media (min-width: 1100px) {
+	.map-wrp .map #map {
+		width: 100rem;
+	}
 }
 
 
