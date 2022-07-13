@@ -159,21 +159,22 @@
 	</div>
 
 	<div class="questionnaire-holder">
+		<form id="response-form">
 		<div class="comming-intention">
 			<div class="comming-intention-option">
-				<label>Конечно, мы будем!<input id="agree" type="radio" name="comming-intention"></label>
+				<label>Конечно, мы будем!<input id="agree" type="radio" name="comming-intention" value="да"></label>
 			</div>
 			<div class="comming-intention-option">
-				<label>Мы не придем<input id="disagree" type="radio" name="comming-intention"></label>
+				<label>Мы не придем<input id="disagree" type="radio" name="comming-intention" value="нет"></label>
 			</div>
 		</div>
 	
+		<input id="second-name-input" type="text" name="second-name" style="display: none;" readonly>
+
 		<div class="questioning-custom" style="display: none;">
 			<div class="info">Пожалуйста, чтобы все прошло идеально,<br> ответьте еще на несколько <span>вопросов</span></div>
-	
-			<form id="response-form">
 				<div class="questions-form first">
-					<div class="question name"> Гость <input type="text" name="guest-name" class="guest-name-input" readonly></div>
+					<div class="question name"> Гость <input type="text" name="guest-name-1" class="guest-name-input" readonly></div>
 					<div class="questionnaire">
 						<div class="question salad">
 							<div class="name">Какой салат кушац будешь?</div>
@@ -208,11 +209,11 @@
 				</div>
 		
 				<div id="need-plus-one" style="display: none">
-					<label><input id="need-plus-one-checkbox" type="checkbox" name="group3">+1</label>
+					<label><input id="need-plus-one-checkbox" type="checkbox">+1</label>
 				</div>
 		
 				<div class="questions-form second" style="display: none">
-					<div class="question name"> Гость <input type="text" name="guest-name" class="guest-name-input" readonly></div>
+					<div class="question name"> Гость <input type="text" name="guest-name-2" class="guest-name-input" readonly></div>
 					<div class="questionnaire">
 						<div class="question salad">
 							<div class="name">Какой салат кушац будешь?</div>
@@ -246,128 +247,14 @@
 					
 				</div>
 		
-			</div>
-		
-			<div class="submit-questionnarie" style="display: none;">
-				<input type="submit" value="Подтвердить">
-			</div>
+		</div>
+	
+		<div class="submit-questionnarie" style="display: none;">
+			<input type="submit" value="Подтвердить">
+		</div>
 		</form>
 	</div>
 
-	<!-- <div id="question">
-
-	</div> -->
-
-
-
-
-	<!-- <div id="questioning" class="questioning-wrp">
-		<div class="questioning">
-			<form id="response-form" action="#"> -->
-				<!-- <div class="row inp-radio">
-					<div class="col-md-6 col-left clear">
-						<label>Конечно, мы будем!<input id="agree" type="radio" name="group1"></label>
-					</div>
-					<div class="col-md-6 col-right clear">
-						<label>Мы не придем<input id="disagree" type="radio" name="group1"></label>
-					</div>
-				</div> -->
-				<!-- <div class="row radios">
-					<div class="info">Пожалуйста, чтобы все прошло идеально,<br> ответьте еще на несколько <span>вопросов</span></div>
-					<div id="questions-form" style="display: none;">
-						<div class="questionnaire first">
-							<div class="question name"> Гость <input type="text" name="freecar"></div>
-							<div class="question salad">
-								<div class="name">Какой салат кушац будешь?</div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат греческий с рассольным сыром</label></div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Немецкий с копченой свининой</label></div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Кобб с цыпленком, беконом, яйцом, грибами, томатами и огурцами</label></div>
-							</div>
-
-							<div class="question main-dish">
-								<div class="name">Какое горячее вкусить изволите?</div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из семги с соусом Тар-Тар</label></div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из копченой свинины с чесночным соусом</label></div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Медальоны из цыпленка с соусом BBQ</label></div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из индейки с соусом BBQ</label></div>
-							</div>
-
-							<div class="question wine-color">
-								<div class="name">Цвет какого винца вам больше по душе?</div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Красное</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Белое</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Пьем все!</label></div>
-							</div>
-							<div class="question wine-taste">
-								<div class="name">А что по сладости?</div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Люблю по суше</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Люблю по слаще</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Пьем все!</label></div>
-							</div>
-						</div> -->
-
-						<!-- <div id="need-plus-one" style="display: none">
-							<label><input type="checkbox" name="group3">+1</label>
-						</div>
-						<div class="questionnaire second" style="display: none">
-							<div class="question salad">
-								<div class="name">Какой салат кушац будешь?</div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат греческий с рассольным сыром</label></div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Немецкий с копченой свининой</label></div>
-								<div class="answer"><label><input type="radio" name="group3" class="radios-check">Салат Кобб с цыпленком, беконом, яйцом, грибами, томатами и огурцами</label></div>
-							</div>
-
-							<div class="question main-dish">
-								<div class="name">Какое горячее вкусить изволите?</div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из семги с соусом Тар-Тар</label></div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из копченой свинины с чесночным соусом</label></div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Медальоны из цыпленка с соусом BBQ</label></div>
-								<div class="answer"><label><input type="radio" name="main-dish" class="radios-check">Стейк из индейки с соусом BBQ</label></div>
-							</div>
-
-							<div class="question wine-color">
-								<div class="name">Цвет какого винца вам больше по душе?</div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Красное</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Белое</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Пьем все!</label></div>
-							</div>
-							<div class="question wine-taste">
-								<div class="name">А что по сладости?</div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Люблю по суше</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Люблю по слаще</label></div>
-								<div class="answer"><label><input type="radio" name="wine_color" class="radios-check">Пьем все!</label></div>
-							</div>
-
-							<div class="question name"> Имя гостя <input type="text" name="freecar"></div>
-						</div>
-					</div> -->
-
-					<!-- <div class="col-md-4 food clear">
-						<div class="name">Какой салат кушац будешь?</div>
-						<div class="quest-radio"><label><input type="radio" name="group3" class="radios-check">Салат греческий с рассольным сыром</label></div>
-						<div class="quest-radio"><label><input type="radio" name="group3" class="radios-check">Салат Цезарь с цыпленком</label></div>
-						<div class="quest-radio"><label><input type="radio" name="group3" class="radios-check">Салат Немецкий с копченой свининой</label></div>
-						<div class="quest-radio wide"><label><input type="radio" name="group3" class="radios-check">Салат Кобб с цыпленком, беконом, яйцом, грибами, томатами и огурцами</label></div>
-					</div>
-					<div class="col-md-4 drink clear">
-						<div class="name">Что будете пить</div>
-						<div class="quest-radio"><label><input type="radio" name="group4" id="vino" class="radios-check">вино</label></div>
-						<div class="quest-radio"><label><input type="radio" name="group4" class="radios-check">коньяк</label></div>
-						<div class="quest-radio"><label><input type="radio" name="group4" class="radios-check">виски</label></div>
-						<div class="quest-radio"><label><input type="radio" name="group4" class="radios-check">другое</label></div>
-						<div class="quest-text"><label><input type="text" name="group4-other" class="text-check"></label></div>
-					</div> -->
-				<!-- </div>
-				<div class="row submit">
-					<div class="col-md-6 col-left clear"><input type="text" name="contact" placeholder="тел. / e-mail"></div>
-					<div class="col-md-6 col-right clear"><input type="submit" value="Подтвердить"></div>
-				</div>
-			</form>
-		</div>
-	</div>
-</div> -->
 <div class="photogallery-wrp wrapper-full">
 	<div class="photogallery" id="photo">
 		<div class="title wrapper-800">Фотогалерея</div>
@@ -557,6 +444,10 @@
 			$(".answer input:radio").styler();
 			$(".comming-intention-option input:radio").styler();
 
+			Array.from($(".answer input:radio")).forEach(element => {
+				element.value = element.closest('label').textContent;
+			});
+
 			$('.comming-intention input:radio').change(function() {
 			  $(".submit-questionnarie")[0].style = "display: flex";
 
@@ -653,15 +544,14 @@
 			$('#response-form').submit(function(e) {
 				//prevent the form from submiting so we can post to the google form
 				e.preventDefault();
-				//AJAX request
 
+				var firstName = $(".questions-form.first .guest-name-input")[0].value;
 				var secondName = $(".questions-form.second .guest-name-input")[0].value;
 				if ($("#need-plus-one-checkbox")[0].checked && !secondName){
 					alert("Пожалуйста, укажите имя второго гостя");
 					return;
 				}				
 
-				var name = "пупа и лупа";
 				var agree = "не указано";
 				var food = "вкусное что-нибудь";
 
@@ -672,28 +562,44 @@
 					agree = "нет";
 				}
 
-				alert($('#response-form').serialize())
-				
+				var inputsMapping = {
+					"second-name": "entry.2072880449",
+					"comming-intention": "entry.1597264985",
+					"guest-name-1": "entry.717844149",
+					"main-dish-1": "entry.135459113",
+					"salad-1": "entry.1597468061",
+					"wine_color-1": "entry.552650516",
+					"wine_taste-1": "entry.965970282",
+					"guest-name-2": "entry.1250140578",
+					"main-dish-2": "entry.530243344",
+					"salad-2": "entry.1460130690",
+					"wine_color-2": "entry.1937015556",
+					"wine_taste-2": "entry.41400637",
+				};
+
+				var parameters = [];
+				const formData = new FormData($('#response-form')[0])
+				for (var pair of formData.entries()) {
+					parameters.push(`${inputsMapping[pair[0]]}=${pair[1]}`);
+				}
+
+console.log(parameters.join("&"));
+
 				$.ajax({
-					url: `https://docs.google.com/forms/d/e/1FAIpQLSerqAotjN9abitkmGSRQMMruUxyYrvaLahprkAg0lz5ovuG-Q/formResponse?entry.717844149=${name}&entry.1597264985=${agree}&entry.1597468061=${food}`,     //The public Google Form url, but replace /view with /formResponse
-	//				data: $('#response-form').serialize(), //Nifty jquery function that gets all the input data
-					type: 'POST', //tells ajax to post the data to the url
-					dataType: "json", //the standard data type for most ajax requests
-					statusCode: { //the status code from the POST request
-					0: function(data) { //0 is when Google gives a CORS error, don't worry it went through
-						//success
-						alert('success 0');
-	//					$('#form-success').text('hooray!');
-					},
-					200: function(data) {//200 is a success code. it went through!
-						//success
-						alert('success 200');
-	//					$('#form-success').text('hooray!');
-					},
-					403: function(data) {//403 is when something went wrong and the submission didn't go through
-						//error
-						alert('Oh no! something went wrong. we should check our code to make sure everything matches with Google');
-					}
+					url: `https://docs.google.com/forms/d/e/1FAIpQLSerqAotjN9abitkmGSRQMMruUxyYrvaLahprkAg0lz5ovuG-Q/formResponse?${parameters.join("&")}`,     //The public Google Form url, but replace /view with /formResponse
+					type: 'POST',
+					dataType: "json",
+					statusCode: {
+						0: function(data) {
+							alert('Результат отправлен!');
+						},
+						200: function(data) {
+							alert('Результат отправлен!');
+						},
+						403: function(data) {//403 is when something went wrong and the submission didn't go through
+							//error
+							alert('О нет, что-то пошло не так! Мы не смогли ');
+						}
 					}  
 				});
 			});
@@ -760,6 +666,7 @@
 		guestNameElement.innerHTML = [guestData.guestName1, guestData.guestName2].filter(x => x).join(' и ');
 
 		$(".questions-form.first .guest-name-input")[0].value = guestData.guestName1;
+		$("#second-name-input")[0].value = guestData.idName;
 
 		if (guestData.guestName2){
 			$(".questions-form.second")[0].style = "display: grid";
