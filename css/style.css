@@ -795,23 +795,7 @@ body .row {
 .photogallery-wrp .photogallery .slider-buttons .next:hover {
 	opacity: 1;
 }
-.insta-wrp {
-}
-.insta-wrp .insta #photostack-1 {
-	height: 580px;
-}
-.insta-wrp .text {
-	font-family: GilroyLight;
-	font-size: 24px;
-	color: #333;
-	text-align: right;
-	margin-bottom: 67px;
-}
-.insta-wrp .text span {
-	font-family: GilroyExtraBold;
-	font-size: 24px;
-	color: #333;
-}
+
 .photogallery-wrp .photogallery .my-flipster {
     height: 750px;
     padding-top: 10px;
@@ -840,25 +824,6 @@ body .row {
 .flipster__item--current .flipster__item__content {
 	-webkit-box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
 	        box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
-}
-.insta-wrp .insta .title {
-    position: relative;
-    margin-bottom: 67px;
-    font-family: CeraB;
-    font-size: 48px;
-    color: #DB3B5D;
-    text-transform: uppercase;
-    text-align: right;
-}
-.insta-wrp .insta .title:after {
-    position: absolute;
-    display: block;
-    width: 5000px;
-    height: 1px;
-    background: #DB3B5D;
-    content: "";
-    right: 441px;
-    top: 37px;
 }
 .feedback-wrp {
 	padding-top: 166px;
