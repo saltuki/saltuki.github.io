@@ -729,14 +729,14 @@ body .row {
 	color: #fff;
 }
 .photogallery-wrp {
-	margin-bottom: 151px;
+	margin-bottom: 5rem;
 }
 .photogallery-wrp .photogallery .title {
     position: relative;
     margin-bottom: 67px;
     font-family: CeraB;
     font-size: 48px;
-    color: #DB3B5D;
+    color: #8da884;
     text-transform: uppercase;
     text-align: left;
 }
@@ -745,7 +745,7 @@ body .row {
    display: block;
    width: 5000px;
    height: 1px;
-   background: #DB3B5D;
+   background: #8da884;
    content: "";
    left: 371px;
    top: 37px;
@@ -753,18 +753,18 @@ body .row {
 .photogallery-wrp .photogallery .slider-buttons {
 	position: relative;
 	display: block;
-	width: 1100px;
+	width: 40rem;
 	z-index: 10;
 	margin: 0 auto;
 }
 .photogallery-wrp .photogallery .slider-buttons .prev {
 	position: absolute;
     display: block;
-    width: 79px;
-    height: 196px;
+    width: 6rem;
+    height: 19.6rem;
     background: url(../images/slider-buttons.png) no-repeat 0 0;
-    left: -79px;
-    top: 250px;
+    left: -6rem;
+    top: 4.5rem;
     cursor: pointer;
     opacity: 0.7;
     -webkit-transition: all 0.5s ease 0s;
@@ -779,11 +779,11 @@ body .row {
 .photogallery-wrp .photogallery .slider-buttons .next {
     position: absolute;
     display: block;
-    width: 79px;
+    width: 6rem;
     height: 196px;
-    background: url(../images/slider-buttons.png) no-repeat -79px 0;
-    right: -79px;
-    top: 250px;
+    background: url(../images/slider-buttons.png) no-repeat -8.9rem 0;
+    right: -6rem;
+    top: 4.5rem;
     cursor: pointer;
     opacity: 0.7;
     -webkit-transition: all 0.5s ease 0s;
@@ -797,152 +797,43 @@ body .row {
 }
 
 .photogallery-wrp .photogallery .my-flipster {
-    height: 750px;
     padding-top: 10px;
 }
-.flipster__container {
-	/* left: 138px; */
+.photogallery-wrp .photogallery .photo {
+	width: 40rem;
+} 
+
+@media (min-width: 700px) {
+	.photogallery-wrp .photogallery .photo {
+		width: 60rem;
+	} 
+	.photogallery-wrp .photogallery .slider-buttons {
+		width: 60rem
+	}
+	.photogallery-wrp .photogallery .slider-buttons .prev {
+		top: 13rem;
+	}
+	.photogallery-wrp .photogallery .slider-buttons .next {
+		top: 13rem;
+	}
 }
-.flipster__item {
-	/* transform: scale(0.75); */
-/* 	-webkit-transition: transform 0.5s ease 0s;
-	   -moz-transition: transform 0.5s ease 0s;
-	    -ms-transition: transform 0.5s ease 0s;
-	     -o-transition: transform 0.5s ease 0s;
-	        transition: transform 0.5s ease 0s; */
+
+@media (min-width: 1200px) {
+	.photogallery-wrp .photogallery .slider-buttons {
+		width: 110rem;
+	}
+	.photogallery-wrp .photogallery .photo {
+		width: 110rem;
+	} 
+	.photogallery-wrp .photogallery .slider-buttons {
+		width: 110rem;
+		top: 13rem;
+	}
 }
-.flipster__item .flipster__item__content {
-/* 	-webkit-transition: box-shadow 0.5s ease 0s;
-	   -moz-transition: box-shadow 0.5s ease 0s;
-	    -ms-transition: box-shadow 0.5s ease 0s;
-	     -o-transition: box-shadow 0.5s ease 0s;
-	        transition: box-shadow 0.5s ease 0s; */
-}
-.flipster__item--current {
-	/* transform: scale(1); */
-}
+
 .flipster__item--current .flipster__item__content {
 	-webkit-box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
 	        box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
-}
-.feedback-wrp {
-	padding-top: 166px;
-	min-height: 1315px;
-	background: url(../images/feedback-bg.png) no-repeat top center;
-}
-.feedback-wrp .feedback .title {
-    position: relative;
-    margin-bottom: 67px;
-    font-family: CeraB;
-    font-size: 48px;
-    color: #DB3B5D;
-    text-transform: uppercase;
-    text-align: left;
-}
-.feedback-wrp .feedback .title:after {
-	position: absolute;
-    display: block;
-    width: 5000px;
-    height: 1px;
-    background: #DB3B5D;
-    content: "";
-    left: 510px;
-    top: 37px;
-}
-.feedback-wrp .feedback .info {
-	margin-top: 25px;
-	margin-bottom: 80px;
-	font-family: GilroyLight;
-	font-size: 18px;
-	color: #232D22;
-	text-align: center;
-}
-.feedback-wrp .feedback .row {
-	position: relative;
-	display: block;
-	margin-top: 25px;
-}
-.feedback-wrp .feedback .row .col-left form {
-	position: relative;
-	display: block;
-	width: 278px;
-	float: right;
-	margin-right: 120px;
-}
-.feedback-wrp .feedback .row .col-left form input[type=text] {
-	position: relative;
-	display: block;
-	width: 100%;
-	padding-left: 10px;
-	margin-bottom: 50px;
-	border: none;
-	border-bottom: 2px solid #f29073;
-	background-color: transparent;
-	font-family: GilroyLight;
-	font-size: 18px;
-	color: #232D22;
-}
-.feedback-wrp .feedback .row .col-left form textarea {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 226px;
-	padding-left: 10px;
-	border: 2px solid #f29073;
-	background-color: transparent;
-	resize: none;
-	font-family: GilroyLight;
-	font-size: 18px;
-	color: #232D22;
-}
-.feedback-wrp .feedback .row .col-left form input[type=submit] {
-	position: relative;
-	display: block;
-	width: 221px;
-	height: 46px;
-	margin-top: 50px;
-	float: right;
-    background: #fff;
-	font-family: GilroyLight;
-	font-size: 18px;
-	 background: rgba(246,160,102,1);
-    background: -moz-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(246,160,102,1)), color-stop(100%, rgba(254,83,111,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-    background: linear-gradient(135deg, rgba(246,160,102,1) 0%, rgba(254,83,111,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a066', endColorstr='#fe536f', GradientType=1 );
-    color: #fff;
-    border: 0px;
-}
-.feedback-wrp .feedback .book-wrp .messages {
-    position: relative;
-    display: block;
-    width: 400px;
-    height: 401px;
-    padding: 20px 15px;
-	border: 2px solid #f29073;
-    overflow-y: hidden;
-}
-.feedback-wrp .feedback .book-wrp .messages .row {
-	padding: 0;
-	margin: 0 0 40px 0;
-}
-.feedback-wrp .feedback .book-wrp .messages .mCSB_dragger_bar {
-    background: #f29073;
-}
-.feedback-wrp .feedback .book-wrp .messages .name {
-	padding-right: 20px;
-	font-family: GilroyLight,sans-serif;
-	font-size: 18px;
-	color: #f29073;
-}
-.feedback-wrp .feedback .book-wrp .messages .message {
-	padding-right: 20px;
-	font-family: GilroyLight,sans-serif;
-	font-size: 14px;
-	color: #333;
 }
 .map-wrp {
 	position: relative;
