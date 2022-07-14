@@ -138,12 +138,12 @@
 				</div>
 				<div class="inv-text">
 					<p>
-						15 декабря 2017 года может пройти как обычный день <br>и не запомниться Вам ничем особенным… <br>А может стать одним из самых приятных дней не только для нас, но и для Вас!<br>
+						3 сентября 2022 года может пройти как обычный день <br>и не запомниться Вам ничем особенным… <br>А может стать одним из самых приятных дней не только для нас, но и для Вас!<br>
 					</p>
 					<p>Очень ждём Вас на нашем счастливом празднике - нашей свадьбе!</p>
 
 					<p>
-						Просим Вас сообщить о Вашем согласии или отказе до 20 июня по телефону 8 (898) 567-4128 <br>(наш организатор Виктория) <br>
+						Просим Вас сообщить о Вашем согласии или отказе до 15 августа по телефону 8 (913) 068-4879 <br>(наш организатор Татьяна) <br>
 					</p>
 					<p>или заполнить форму ниже</p>
 				</div>
@@ -164,10 +164,10 @@
 		<form id="response-form">
 		<div class="comming-intention">
 			<div class="comming-intention-option">
-				<label>Конечно, мы будем!<input id="agree" type="radio" name="comming-intention" value="да"></label>
+				<label id="agree-label">Конечно, я буду!<input id="agree" type="radio" name="comming-intention" value="да"></label>
 			</div>
 			<div class="comming-intention-option">
-				<label>Мы не придем<input id="disagree" type="radio" name="comming-intention" value="нет"></label>
+				<label id="disagree-label">Я не приду<input id="disagree" type="radio" name="comming-intention" value="нет"></label>
 			</div>
 		</div>
 	
@@ -280,7 +280,7 @@
 	<div class="map wrapper-800" id="mapblock">
 		<div class="title">Как добраться</div>
 		<div id="map"></div>
-		<div class="info">Если остались вопросы, звоните: 8 945 762 91 21</div>
+		<div class="info">Если остались вопросы, звоните: 8 (913) 068-4879 (Татьяна)</div>
 	</div>
 	<ul id="scene1" style="position: absolute;top: 0;top: 0; padding: 0;margin: 0;">
 	  <li class="layer" data-depth="0.40"><img src="images/i-layer1.png"></li>
@@ -474,7 +474,7 @@ console.log(parameters.join("&"));
 						},
 						403: function(data) {//403 is when something went wrong and the submission didn't go through
 							//error
-							alert('О нет, что-то пошло не так! Мы не смогли ');
+							alert('О нет, что-то пошло не так! Мы не смогли записать ваш ответ, свяжитесь с нами по телефону');
 						}
 					}  
 				});
@@ -547,6 +547,9 @@ console.log(parameters.join("&"));
 		if (guestData.guestName2){
 			$(".questions-form.second")[0].style = "display: grid";
 			$(".questions-form.second .guest-name-input")[0].value = guestData.guestName2;
+
+			$(".agree-label")[0].innerHTML = "Конечно, мы будем!";
+			$(".disagree-label")[0].innerHTML = "Мы не придем";
 		}
 		else if (!guestData.knownSingle){
 			$("#need-plus-one")[0].style = "display: block";
