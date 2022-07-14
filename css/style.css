@@ -245,6 +245,12 @@ body .row {
 	}
 }
 
+@media (hover: none) {
+	.mouse-visual{
+		display: none;
+	}
+}
+
 .header-wrp .menu-wrp ul.menu {
     color: #fff;
 	font-family: Cera;	
