@@ -169,6 +169,12 @@ body .row {
 	    overflow-x: hidden;
 }
 
+.wrapper-centered {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header-wrp {
 	position: relative;
 	width: 100%;
@@ -437,9 +443,6 @@ body .row {
 }
 
 .face-programm-wrp .face-programm .programm {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	background: #FFF;
 	z-index: 2;
 }
