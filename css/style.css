@@ -1160,6 +1160,15 @@ body .row {
 		border-bottom: 1px dashed #333;
 		background-color: transparent;
 	}
+
+	.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer {
+		all: revert;
+	}
+
+	.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer:hover,
+    .questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer.checked {
+		all: revert;
+	}
 	
 	.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label:before {
 		position: relative;
@@ -1171,17 +1180,12 @@ body .row {
 		content: "";
 		background: url(../images/check.png) no-repeat 0 0;
 	}
-	.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label:hover:before,
-	.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label.checked:before {
-		background: url(../images/check.png) no-repeat -18px 0;
+
+	.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label:hover,
+    .questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer.checked label{
+		background: url(../images/check.png) no-repeat -18px 5px;
 	}
-
-	/* .questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer {
-		width: 400px;
-		font-size: 1.8rem;
-		line-height: 4.6rem;
-	} */
-
+	
 	.comming-intention-option {
 		width: 30rem;
 		margin: 0 0.5rem 0;
