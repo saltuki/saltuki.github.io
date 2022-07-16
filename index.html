@@ -354,14 +354,23 @@
 					$('.questioning-custom')[0].style = "display: grid;"
 				} else {
 					$('.questioning-custom')[0].style = "display: none;"
+					$('.answer.checked').each((idx, item) => $(item).removeClass('checked'))
+					$('.questionnaire .answer input:radio').each((idx, item) => $(item).prop('checked', false))
 				}
 			  }
 			});
+
+			$('.answer').click(function() {
+				var radioBtn = $($(this).find("input:radio")[0])
+				if(!$(radioBtn).is(':checked')) {
+					$(radioBtn).trigger("click");
+				}
+			})
 			
 			$('.answer input:radio').change(function() {
 			  if ($(this).is(':checked')) {
-				$(`.answer input:radio[name=${this.name}]`).closest('label').removeClass("checked");
-			    $(this).closest('label').addClass('checked');
+				$(`.answer input:radio[name=${this.name}]`).closest('div.answer').removeClass("checked");
+			    $(this).closest('div.answer').addClass('checked');
 			  }
 			});
 

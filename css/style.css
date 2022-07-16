@@ -1038,7 +1038,8 @@ body .row {
 .submit-questionnarie.clicked input,
 .questionnaire-holder .comming-intention .comming-intention-option:hover,
 .questionnaire-holder .comming-intention .comming-intention-option.checked,
-.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label.checked {
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer:hover,
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer.checked {
 	border: 0px;
 	background: rgba(246,160,102,1);
 	background: -webkit-linear-gradient(-45deg, rgba(141,168,132,1) 0%, rgba(56,87,35,1) 100%);
@@ -1067,7 +1068,8 @@ body .row {
 }
 
 .questioning-custom .info {
-	margin: 10px auto;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .questions-form {
@@ -1095,6 +1097,11 @@ body .row {
 	margin: 10px auto;
 	font-size: 20px;
 	height: 50px;
+}
+
+.question .name {
+	font-size: 2rem;
+	text-align: center;
 }
 
 @media (min-width: 700px) {
