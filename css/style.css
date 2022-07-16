@@ -441,6 +441,8 @@ body .row {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: #FFF;
+	z-index: 2;
 }
 
 .face-programm-wrp .face-programm .programm-wrp .programm > .title {
@@ -596,10 +598,6 @@ body .row {
 }
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info a {
 	color: #ACBD86;
-}
-
-.toplink {
-	z-index: 2;
 }
 
 .inviting-wrp {
