@@ -556,6 +556,10 @@ body .row {
 	color: #ACBD86;
 }
 
+.toplink {
+	z-index: 2;
+}
+
 .inviting-wrp {
 	position: relative;
 	display: flex;
