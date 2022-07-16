@@ -175,6 +175,27 @@ body .row {
     align-items: center;
 }
 
+.block-title {
+	position: relative;
+	margin-bottom: 5rem;
+	font-family: CeraB;
+	font-size: 5rem;
+	color: #8da884;
+	text-transform: uppercase;
+	text-align: left;	
+}
+
+.block-title:before {
+	position: absolute;
+    display: block;
+    width: 5000px;
+    height: 1px;
+    background: #8da884;
+    content: "";
+    right: 35rem;
+    top: 3.5rem;
+}
+
 .header-wrp {
 	position: relative;
 	width: 100%;
@@ -445,26 +466,6 @@ body .row {
 .face-programm-wrp .face-programm .programm {
 	background: #FFF;
 	z-index: 2;
-}
-
-.face-programm-wrp .face-programm .programm-wrp .programm > .title {
-	position: relative;
-	margin-bottom: 5rem;
-	font-family: CeraB;
-	font-size: 5rem;
-	color: #8da884;
-	text-transform: uppercase;
-	text-align: center;
-}
-.face-programm-wrp .face-programm .programm-wrp .programm > .title:before {
-	position: absolute;
-    display: block;
-    width: 5000px;
-    height: 1px;
-    background: #8da884;
-    content: "";
-    right: 35rem;
-    top: 3.5rem;
 }
 
 .face-programm-wrp .face-programm .programm-wrp .programm .rows-wrp {
@@ -794,24 +795,8 @@ body .row {
 .photogallery-wrp {
 	margin-bottom: 5rem;
 }
-.photogallery-wrp .photogallery .title {
-    position: relative;
-    margin-bottom: 67px;
-    font-family: CeraB;
-    font-size: 48px;
-    color: #8da884;
-    text-transform: uppercase;
-    text-align: left;
-}
-.photogallery-wrp .photogallery .title:after {
-   position: absolute;
-   display: block;
-   width: 5000px;
-   height: 1px;
-   background: #8da884;
-   content: "";
-   left: 371px;
-   top: 37px;
+.photogallery-wrp .photogallery .block-title:before {
+   right: 40rem;
 }
 .photogallery-wrp .photogallery .slider-buttons {
 	position: relative;
@@ -909,24 +894,8 @@ body .row {
 	position: relative;
 	z-index: 2;
 }
-.map-wrp .map .title {
-    position: relative;
-    margin-bottom: 67px;
-    font-family: CeraB;
-    font-size: 48px;
-    color: #8da884;
-    text-transform: uppercase;
-    text-align: left;
-}
-.map-wrp .map .title:after {
-    position: absolute;
-    display: block;
-    width: 5000px;
-    height: 1px;
-    background: #8da884;
-    content: "";
-    left: 417px;
-    top: 37px;
+.map-wrp .map .block-title:before {
+    right: 45rem;
 }
 .map-wrp .map #map {
 	position: relative;
