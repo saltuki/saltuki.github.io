@@ -211,7 +211,7 @@
 				</div>
 		
 				<div id="need-plus-one" style="display: none">
-					<label><input id="need-plus-one-checkbox" type="checkbox">+1</label>
+					<label><input id="need-plus-one-checkbox" type="checkbox">Я приду со своей парой</label>
 				</div>
 		
 				<div class="questions-form second" style="display: none">
@@ -328,6 +328,7 @@
 
 			$(".answer input:radio").styler();
 			$(".comming-intention-option input:radio").styler();
+			$("#need-plus-one-checkbox").styler();
 
 			Array.from($(".answer input:radio")).forEach(element => {
 				element.value = element.closest('label').textContent;
@@ -341,21 +342,25 @@
 			})
 
 			$('.comming-intention input:radio').change(function(e) {
-				if($(".submit-questionnarie.clicked").length > 0) {
+				if($(".submit-questionnarie input:disabled").length > 0) {
 					return;
 				}
 
-			  $(".submit-questionnarie")[0].style = "display: flex";
+			  $(".submit-questionnarie")[0].style = "display: auto";
 
 			  if ($(this).is(':checked')) {
 			  	$('.comming-intention-option').each((idx, item) => $(item).removeClass('checked'))
 			    $(this).closest('.comming-intention-option').addClass('checked');
 				if ($(this).is("#agree")) {
-					$('.questioning-custom')[0].style = "display: grid;"
+					$('.questioning-custom')[0].style = "display: auto;"
 				} else {
 					$('.questioning-custom')[0].style = "display: none;"
 					$('.answer.checked').each((idx, item) => $(item).removeClass('checked'))
 					$('.questionnaire .answer input:radio').each((idx, item) => $(item).prop('checked', false))
+	
+					$("#need-plus-one").removeClass("clicked");
+					$("#need-plus-one-checkbox").prop("checked", false);
+					$(".questions-form.second")[0].style = "display: none"
 				}
 			  }
 			});
@@ -376,9 +381,11 @@
 
 			$("#need-plus-one").change(function() {
 				if($("#need-plus-one label input").is(":checked")) {
-					$(".questions-form.second")[0].style = "display: grid"
+					$(".questions-form.second")[0].style = "display: auto"
+					$(this).addClass("clicked")
 				} else {
-					$(".questions-form.second")[0].style = "display: none"	
+					$(".questions-form.second")[0].style = "display: none"
+					$(this).removeClass("clicked")	
 				}
 			})
 
@@ -435,10 +442,6 @@
 		      });
 		      return false;
 		   });
-
-		   $(".submit-questionnarie").click(function() {
-			   $(this).addClass("clicked")
-		   })
 
 			$('#response-form').submit(function(e) {
 				//prevent the form from submiting so we can post to the google form
@@ -570,14 +573,14 @@
 		$("#second-name-input")[0].value = guestData.idName;
 
 		if (guestData.guestName2){
-			$(".questions-form.second")[0].style = "display: grid";
+			$(".questions-form.second")[0].style = "display: auto";
 			$(".questions-form.second .guest-name-input")[0].value = guestData.guestName2;
 
 			$(".agree-label")[0].innerHTML = "Конечно, мы будем!";
 			$(".disagree-label")[0].innerHTML = "Мы не придем";
 		}
 		else if (!guestData.knownSingle){
-			$("#need-plus-one")[0].style = "display: block";
+			$("#need-plus-one")[0].style = "display: auto";
 			$(".questions-form.second .guest-name-input")[0].removeAttribute("readonly");
 		}
 

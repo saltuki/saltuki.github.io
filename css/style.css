@@ -947,6 +947,7 @@ body .row {
 	cursor: pointer;
 }
 
+#need-plus-one,
 .submit-questionnarie input,
 .comming-intention-option {
 	width: 15rem;
@@ -989,8 +990,9 @@ body .row {
 	        transition: all 0.5s ease 0s;
 }
 
+#need-plus-one:hover,
+#need-plus-one.clicked,
 .submit-questionnarie input:hover,
-.submit-questionnarie.clicked input,
 .questionnaire-holder .comming-intention .comming-intention-option:hover,
 .questionnaire-holder .comming-intention .comming-intention-option.checked,
 .questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer:hover,
@@ -1002,7 +1004,11 @@ body .row {
 	color: #fff;
 }
 
-.submit-questionnarie.clicked input:disabled {
+#need-plus-one {
+	margin-top: 3rem;
+}
+
+.submit-questionnarie input:disabled {
 	/* background: -webkit-linear-gradient(-45deg, rgb(233, 233, 233) 0%, rgb(109, 98, 98) 100%); */
 	background: #999;
 	/* color:#566e4e; */
@@ -1013,11 +1019,11 @@ body .row {
 	width: 100%;
 }
 
-
 .questioning-custom {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	margin: 50px auto;
 }
