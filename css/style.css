@@ -164,7 +164,6 @@ body .row {
 }
 .wrapper-full {
 	position: relative;
-	display: block;
 	width: 100%;
 	-ms-overflow-x: hidden;
 	    overflow-x: hidden;
@@ -606,33 +605,30 @@ body .row {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin-top: -215px;
 	padding-bottom: 10rem;
 	background: url(../images/inviting-bg.png) no-repeat top center;
 }
 .inviting-wrp .inviting {
 	position: relative;
 	display: flex;
-	justify-content: space-around;
-	min-height: 1197px;
 }
 .inviting-wrp .inviting .letter-wrp {
 	position: relative;
-	display: block;
-	width: 90%;
-	min-width: 50rem;
-	height: 75rem;
-	top: 347px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	background: #FFF;
 	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
 	        box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+		/* temporary */
+		border: #385723 1px solid; 
 }
 
 .inviting-wrp .inviting .letter-wrp .letter {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin: 5rem 5rem 0 5rem;
+	margin: 3rem 3rem 0 3rem;
 }
 .inviting-wrp .inviting .letter-wrp .title {
 	font-family: CeraB;
@@ -657,10 +653,10 @@ body .row {
 .inviting-wrp .inviting .letter-wrp .dots {
 	position: relative;
 	display: flex;
-	width: 70%;
-	margin: 0 auto;
-	margin-top: 3rem;
+	width: 90%;
+	margin: 2rem auto;
 	justify-content: space-between;
+	/* padding: 2rem 0; */
 }
 .inviting-wrp .inviting .letter-wrp .dots .dot {
 	height: 6.5rem;
@@ -689,6 +685,12 @@ body .row {
 	background-color: #d3b99c
 }
 
+.inviting-wrp .inviting > .title {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
 @media (min-width: 700px) {
 	.inviting-wrp .inviting .letter-wrp {
 		background: url(../images/marker.png) no-repeat 21px 0px #FFF;
@@ -713,24 +715,20 @@ body .row {
 	.inviting-wrp .inviting .letter-wrp .letter .inv-text {
 		text-align: start;
 	}
-}
 
-.inviting-wrp .inviting > .title {
-	position: absolute;
-    display: block;
-    right: -10rem;
-    top: 525px;
-    font-family: CeraB;
-    font-size: 6rem;
-    color: #FFF;
-    text-transform: uppercase;
-	transform: rotate(90deg);
-	visibility: hidden;
-}
-
-@media (min-width: 65rem) {
 	.inviting-wrp .inviting > .title {
+		position: absolute;
+		display: block;
+		right: -10rem;
+		top: 525px;
+		font-family: CeraB;
+		font-size: 6rem;
+		color: #FFF;
+		text-transform: uppercase;
+		transform: rotate(90deg);
 		visibility: visible;
+		width: auto;
+		height: auto;
 	}
 }
 
