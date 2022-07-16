@@ -905,6 +905,7 @@ body .row {
 	overflow: hidden;
 }
 .map-wrp .map {
+	position: relative;
 	z-index: 2;
 }
 .map-wrp .map .title {
