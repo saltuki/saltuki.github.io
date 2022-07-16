@@ -357,10 +357,6 @@ body .row {
 	min-height: 725px;
 	background: #FFF;
 	z-index: 2;
-	border: #8da884 1px solid;
-
-	box-shadow: 2rem 0.3rem 3rem #8da884;
-	
 }
 
 @media (min-width: 1000px) {
@@ -555,7 +551,7 @@ body .row {
     position: absolute;
     display: block;
     width: 2px;
-    height: 15px;
+    height: 35px;
     background: #e4e4e4;
     content: "";
     bottom: 40px;
