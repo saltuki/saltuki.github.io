@@ -973,6 +973,17 @@ body .row {
 	justify-content: space-around; 
 }
 
+.submit-questionnarie {
+	all: unset;
+
+
+	display: flex;
+	justify-content: center;
+
+	cursor: pointer;
+}
+
+.submit-questionnarie input,
 .comming-intention-option {
 	width: 15rem;
 	margin: 0.5rem;
@@ -982,6 +993,7 @@ body .row {
 
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 	font-weight: normal;
 	color: #1F1F1F;
@@ -994,6 +1006,7 @@ body .row {
 	     -o-transition: all 0.5s ease 0s;
 	        transition: all 0.5s ease 0s;
 }
+
 
 .questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer {
 	width: 400px;
@@ -1012,14 +1025,23 @@ body .row {
 	        transition: all 0.5s ease 0s;
 }
 
+.submit-questionnarie input:hover,
+.submit-questionnarie.clicked input,
 .questionnaire-holder .comming-intention .comming-intention-option:hover,
 .questionnaire-holder .comming-intention .comming-intention-option.checked,
-.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label.checked {
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer:hover,
+.questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer.checked {
 	border: 0px;
 	background: rgba(246,160,102,1);
 	background: -webkit-linear-gradient(-45deg, rgba(141,168,132,1) 0%, rgba(56,87,35,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a066', endColorstr='#fe536f', GradientType=1 );
 	color: #fff;
+}
+
+.submit-questionnarie.clicked input:disabled {
+	/* background: -webkit-linear-gradient(-45deg, rgb(233, 233, 233) 0%, rgb(109, 98, 98) 100%); */
+	background: #999;
+	/* color:#566e4e; */
 }
 
 .questionnaire-holder .comming-intention .comming-intention-option label {
@@ -1037,7 +1059,8 @@ body .row {
 }
 
 .questioning-custom .info {
-	margin: 10px auto;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .questions-form {
@@ -1065,6 +1088,11 @@ body .row {
 	margin: 10px auto;
 	font-size: 20px;
 	height: 50px;
+}
+
+.question .name {
+	font-size: 2rem;
+	text-align: center;
 }
 
 @media (min-width: 700px) {
@@ -1128,11 +1156,6 @@ body .row {
 		display: flex;
 		flex-direction: column;
 		padding-left: 1rem;
-	}
-	
-	.submit-questionnarie {
-		display: flex;
-		justify-content: center;
 	}
 	
 	.questionnaire-holder .questions-form .name input {

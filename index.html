@@ -333,7 +333,18 @@
 				element.value = element.closest('label').textContent;
 			});
 
-			$('.comming-intention input:radio').change(function() {
+			$('.comming-intention-option').click(function() {
+				var radioBtn = $($(this).find("input:radio")[0])
+				if(!$(radioBtn).is(':checked')) {
+					$(radioBtn).trigger("click");
+				}
+			})
+
+			$('.comming-intention input:radio').change(function(e) {
+				if($(".submit-questionnarie.clicked").length > 0) {
+					return;
+				}
+
 			  $(".submit-questionnarie")[0].style = "display: flex";
 
 			  if ($(this).is(':checked')) {
@@ -343,14 +354,23 @@
 					$('.questioning-custom')[0].style = "display: grid;"
 				} else {
 					$('.questioning-custom')[0].style = "display: none;"
+					$('.answer.checked').each((idx, item) => $(item).removeClass('checked'))
+					$('.questionnaire .answer input:radio').each((idx, item) => $(item).prop('checked', false))
 				}
 			  }
 			});
+
+			$('.answer').click(function() {
+				var radioBtn = $($(this).find("input:radio")[0])
+				if(!$(radioBtn).is(':checked')) {
+					$(radioBtn).trigger("click");
+				}
+			})
 			
 			$('.answer input:radio').change(function() {
 			  if ($(this).is(':checked')) {
-				$(`.answer input:radio[name=${this.name}]`).closest('label').removeClass("checked");
-			    $(this).closest('label').addClass('checked');
+				$(`.answer input:radio[name=${this.name}]`).closest('div.answer').removeClass("checked");
+			    $(this).closest('div.answer').addClass('checked');
 			  }
 			});
 
@@ -416,6 +436,10 @@
 		      return false;
 		   });
 
+		   $(".submit-questionnarie").click(function() {
+			   $(this).addClass("clicked")
+		   })
+
 			$('#response-form').submit(function(e) {
 				//prevent the form from submiting so we can post to the google form
 				e.preventDefault();
@@ -458,7 +482,7 @@
 					parameters.push(`${inputsMapping[pair[0]]}=${pair[1]}`);
 				}
 
-console.log(parameters.join("&"));
+				var submitBtn = $(this).find(':input[type=submit]');
 
 				$.ajax({
 					url: `https://docs.google.com/forms/d/e/1FAIpQLSerqAotjN9abitkmGSRQMMruUxyYrvaLahprkAg0lz5ovuG-Q/formResponse?${parameters.join("&")}`,     //The public Google Form url, but replace /view with /formResponse
@@ -466,9 +490,11 @@ console.log(parameters.join("&"));
 					dataType: "json",
 					statusCode: {
 						0: function(data) {
+							submitBtn.prop('disabled', true);
 							alert('Результат отправлен!');
 						},
 						200: function(data) {
+							submitBtn.prop('disabled', true);
 							alert('Результат отправлен!');
 						},
 						403: function(data) {//403 is when something went wrong and the submission didn't go through
