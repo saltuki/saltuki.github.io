@@ -337,9 +337,8 @@
 			  $(".submit-questionnarie")[0].style = "display: flex";
 
 			  if ($(this).is(':checked')) {
-			  	$('.comming-intention input:radio').closest('label').removeClass("checked");
-			    $(this).closest('label').addClass('checked');
-
+			  	$('.comming-intention-option').each((idx, item) => $(item).removeClass('checked'))
+			    $(this).closest('.comming-intention-option').addClass('checked');
 				if ($(this).is("#agree")) {
 					$('.questioning-custom')[0].style = "display: grid;"
 				} else {

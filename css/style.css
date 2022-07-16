@@ -983,9 +983,13 @@ body .row {
 
 .comming-intention-option {
 	width: 15rem;
-	margin: 0 0.5rem 0;
+	margin: 0.5rem;
 	font-size: 2rem;
 	line-height: 2.6rem;
+	min-height: 6rem;
+
+	display: flex;
+	align-items: center;
 
 	font-weight: normal;
 	color: #1F1F1F;
@@ -1016,8 +1020,8 @@ body .row {
 	        transition: all 0.5s ease 0s;
 }
 
-.questionnaire-holder .comming-intention .comming-intention-option label:hover,
-.questionnaire-holder .comming-intention .comming-intention-option label.checked,
+.questionnaire-holder .comming-intention .comming-intention-option:hover,
+.questionnaire-holder .comming-intention .comming-intention-option.checked,
 .questionnaire-holder .questioning-custom .questions-form .questionnaire .question .answer label.checked {
 	border: 0px;
 	background: rgba(246,160,102,1);
