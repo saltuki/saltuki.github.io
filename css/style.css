@@ -464,12 +464,7 @@ body .row {
 }
 
 .face-programm-wrp .face-programm .programm {
-	background: #FFF;
 	z-index: 2;
-}
-
-.face-programm-wrp .face-programm .programm-wrp .programm .rows-wrp {
-	background: #FFF;	
 }
 
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row {
