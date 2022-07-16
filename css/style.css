@@ -176,7 +176,7 @@ body .row {
 	display: flex;
 	flex-direction: column;
 	height: 1130px;
-	background: url(../images/header-wrp-bg.png) no-repeat top center;
+	background: url(../images/header-wrp-bg.jpg) no-repeat top center;
 	background-attachment:fixed;
 }
 
