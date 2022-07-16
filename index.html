@@ -333,7 +333,14 @@
 				element.value = element.closest('label').textContent;
 			});
 
-			$('.comming-intention input:radio').change(function() {
+			$('.comming-intention-option').click(function() {
+				var radioBtn = $($(this).find("input:radio")[0])
+				if(!$(radioBtn).is(':checked')) {
+					$(radioBtn).trigger("click");
+				}
+			})
+
+			$('.comming-intention input:radio').change(function(e) {
 			  $(".submit-questionnarie")[0].style = "display: flex";
 
 			  if ($(this).is(':checked')) {
