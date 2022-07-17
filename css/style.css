@@ -627,16 +627,19 @@ body .row {
 	align-items: center;
 	padding-bottom: 10rem;
 	background: url(../images/inviting-bg.png) no-repeat top center;
+	min-height: 1500px;
 }
 .inviting-wrp .inviting {
 	position: relative;
 	display: flex;
+	padding-top: 350px;
 }
 .inviting-wrp .inviting .letter-wrp {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 95%;
+	margin: auto;
 	background: #FFF;
 	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
 	        box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
@@ -919,7 +922,7 @@ body .row {
 	        box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.3);
 }
 .map-wrp {
-	padding: 10%;
+	padding: 5%;
 	margin-top: 0px;
 	padding-top: 10rem;
 	background: url(../images/map-bg.png) no-repeat top center;
