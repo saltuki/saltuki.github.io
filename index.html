@@ -169,10 +169,10 @@
 		<form id="response-form">
 		<div class="comming-intention">
 			<div class="comming-intention-option">
-				<label id="agree-label">Конечно, я буду!<input id="agree" type="radio" name="comming-intention" value="да"></label>
+				<label><span id="agree-label">Конечно, я буду!</span><input id="agree" type="radio" name="comming-intention" value="да"></label>
 			</div>
 			<div class="comming-intention-option">
-				<label id="disagree-label">Я не приду<input id="disagree" type="radio" name="comming-intention" value="нет"></label>
+				<label><span id="disagree-label">Я не приду</span><input id="disagree" type="radio" name="comming-intention" value="нет"></label>
 			</div>
 		</div>
 	
@@ -688,8 +688,8 @@
 			$(".questions-form.second")[0].style = "display: auto";
 			$(".questions-form.second .guest-name-input")[0].value = guestData.guestName2;
 
-			$(".agree-label")[0].innerHTML = "Конечно, мы будем!";
-			$(".disagree-label")[0].innerHTML = "Мы не придем";
+			$("#agree-label")[0].innerHTML = "Конечно, мы будем!";
+			$("#disagree-label")[0].innerHTML = "Мы не придем";
 		}
 		else if (!guestData.knownSingle){
 			$("#need-plus-one")[0].style = "display: auto";
