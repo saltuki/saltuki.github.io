@@ -175,6 +175,21 @@ body .row {
     align-items: center;
 }
 
+.background-transition-to-gray {
+	background: url(../images/bg-to-gray.png);
+	position: absolute;
+	width: 100%;
+	height: 200px;
+}
+
+.background-gray-after-transition {
+	background-color: #e4e4e4;
+	position: absolute;
+	top: 200px;
+	width: 100%;
+	height: calc(100% - 200px);
+}
+
 .block-title {
 	position: relative;
 	margin-bottom: 5rem;
@@ -372,7 +387,9 @@ body .row {
     padding-bottom: 170px;
 	margin-top: -211px;
 	min-height: 1962px;
-	background: url(../images/faceprogramm-bg.png) no-repeat top center;
+}
+.face-programm-wrp .faces-wrp-full {
+	position: relative;
 }
 .face-programm-wrp .face-programm {
 	position: relative;
@@ -380,7 +397,9 @@ body .row {
 	flex-direction: column;
 }
 .face-programm-wrp .face-programm .faces-wrp {
-	min-height: 725px;
+	position: relative;
+	margin: auto;
+	max-width: 95%;
 	background: #FFF;
 	z-index: 2;
 }
@@ -395,8 +414,8 @@ body .row {
 .face-programm-wrp .face-programm .faces {
 	display: flex;
 	justify-content: space-around;
-
 	padding-top: 5.8rem;
+	padding-bottom: 5rem;
 }
 
 .face-programm-wrp .face-programm .faces .person {
@@ -437,6 +456,7 @@ body .row {
 	}
 	.face-programm-wrp .face-programm .faces {
 		padding-top: 9.8rem;
+		padding-bottom: 8rem;
 	}
 }
 
@@ -460,7 +480,8 @@ body .row {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin-top: 31rem;
+	padding-top: 31rem;
+	background: url(../images/bg-from-gray.png) top center no-repeat;
 }
 
 .face-programm-wrp .face-programm .programm {
