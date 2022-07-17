@@ -993,7 +993,7 @@ body .row {
 #need-plus-one,
 .submit-questionnarie input,
 .comming-intention-option {
-	width: 15rem;
+	width: 30rem;
 	margin: 0.5rem;
 	font-size: 2rem;
 	line-height: 2.6rem;
@@ -1013,6 +1013,10 @@ body .row {
 	    -ms-transition: all 0.5s ease 0s;
 	     -o-transition: all 0.5s ease 0s;
 	        transition: all 0.5s ease 0s;
+}
+
+#need-plus-one label {
+	font-weight: normal;
 }
 
 
@@ -1052,9 +1056,7 @@ body .row {
 }
 
 .submit-questionnarie input:disabled {
-	/* background: -webkit-linear-gradient(-45deg, rgb(233, 233, 233) 0%, rgb(109, 98, 98) 100%); */
 	background: #999;
-	/* color:#566e4e; */
 }
 
 .questionnaire-holder .comming-intention .comming-intention-option label {
@@ -1068,7 +1070,7 @@ body .row {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin: 50px auto;
+	margin: 20px auto;
 }
 
 .questioning-custom .info {
@@ -1121,7 +1123,7 @@ body .row {
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
-		margin: 50px auto;
+		margin: 50px auto 2rem;
 	}
 	
 	.questioning-custom .info {

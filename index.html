@@ -384,14 +384,18 @@
 			  }
 			});
 
-			$("#need-plus-one").change(function() {
-				if($("#need-plus-one label input").is(":checked")) {
+			var needPlusOneState = false;
+			$("#need-plus-one").click(function() {
+				if(!needPlusOneState) {
 					$(".questions-form.second")[0].style = "display: auto"
 					$(this).addClass("clicked")
+					$("#need-plus-one-checkbox").prop('checked', true);
 				} else {
 					$(".questions-form.second")[0].style = "display: none"
-					$(this).removeClass("clicked")	
+					$(this).removeClass("clicked");
+					$("#need-plus-one-checkbox").prop('checked', false);
 				}
+				needPlusOneState = !needPlusOneState;
 			})
 
 			var myFlipster = $('.my-flipster').flipster({style:"carousel",loop: true, scrollwheel:false});
