@@ -80,7 +80,7 @@
 							</div>
 							<div class="info">
 								<div class="title">Фотопрогулка</div>
-								<div class="info-add">ул. Пирогова 1 (<a href="#mapblock" class="photo toplink">схема проезда</a>) </div>
+								<div class="info-add">ул. Пирогова 1 (<a href="#mapblock" class="photowalk toplink">схема проезда</a>) </div>
 							</div>
 						</div>
 						<div class="row">
@@ -425,10 +425,10 @@
 
              		DG.marker([54.857850,83.112557], {icon: myIcon}).addTo(map).bindPopup("Банкетный зал<br /> <p style=\"text-align:center;\">ТЕПЛИЦА</p>");
             	 	DG.marker([54.842867,83.091723], {icon: myIcon}).addTo(map).bindPopup("<p style=\"text-align:center;\">Фотоплощадка</p> <p style=\"text-align:center;\">НГУ</p>");
-    			$(".zags").click(function(event) {
+    			$(".photowalk").click(function(event) {
                 	 	map.panTo([54.842867,83.091723]);
 				 });
-				 $(".rest").click(function(event) {
+				 $(".teplica").click(function(event) {
                 	 	map.panTo([54.857850,83.112557]);
 				 });
             });
