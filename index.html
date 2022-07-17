@@ -19,6 +19,9 @@
 </head>
 <body>
 <div class="header-wrp wrapper-full" id="testimonials" data-stellar-background-ratio="0.3">
+	<img id="shifutinskiy" src="images/shifutinskiy.png">
+	<label id="song-text">Я календарь переверну и снова третье сентября</label>
+
 	<div class="menu-wrp">
 		<div class="logo">
 			<div class="names">Настя+Костя</div>
@@ -398,6 +401,18 @@
 					$("#need-plus-one-checkbox").prop('checked', false);
 				}
 				needPlusOneState = !needPlusOneState;
+			})
+
+			var dateClickCounter = 0;
+			$(".header-wrp .title-wrp .date").click(function() {
+				dateClickCounter = dateClickCounter + 1;
+				if (dateClickCounter === 3) {
+					$("#shifutinskiy").addClass("visible")
+				}
+			})
+
+			$("#shifutinskiy").click(function() {
+				$("#song-text").addClass("visible");
 			})
 
 			var myFlipster = $('.my-flipster').flipster({style:"carousel", loop: true, scrollwheel:false, });

@@ -345,6 +345,41 @@ body .row {
 	color: #FFF;
 
 	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+#shifutinskiy {
+	position: absolute;
+	transform: scale(0.4);
+	opacity: 0;
+	visibility: hidden;
+
+	right: -15rem;
+
+	transition: visibility 0s, right 2s,opacity 0.5s linear;
+}
+
+#song-text {
+	position: absolute;
+    visibility: hidden;
+}
+
+#song-text.visible {
+    top: 45rem;
+    width: 150px;
+    right: 11rem;
+    text-align: end;
+	color: #fff;
+    font-family: 'Cera';
+	visibility: visible;
+}
+
+#shifutinskiy.visible{
+	right: -7rem;
+	top: 23rem;
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
 }
 
 @media (min-width:500px) {
@@ -364,6 +399,11 @@ body .row {
 		line-height: 7rem;
 		background-size: 10rem 20rem;
 	}
+
+
+	#song-text.visible {
+		top: 50rem;
+	}
 }
 
 @media (min-width:760px) {
@@ -381,6 +421,10 @@ body .row {
 		height: 26.7rem;
 		top: 21.3rem;
 		line-height: 7rem;
+	}
+
+	#shifutinskiy.visible {
+		top: 24rem;	
 	}
 }
 
