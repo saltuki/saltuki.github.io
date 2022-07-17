@@ -824,6 +824,8 @@ body .row {
 	display: flex;
 	width: 39rem;
 	top: 21rem;
+	top: calc(50% + 3rem);
+    left: calc(50% - 20rem);
 	justify-content: space-between;
 	z-index: 10;
 }
@@ -866,32 +868,41 @@ body .row {
     padding-top: 10px;
 }
 .photogallery-wrp .photogallery .photo {
-	width: 30rem;
+	height: auto; 
+    width: auto; 
+    max-width: 30rem; 
+    max-height: 30rem;
 } 
 
 @media (min-width: 500px) {
 	.photogallery-wrp .photogallery .photo {
-		width: 40rem;
-	} 
+		max-width: 40rem; 
+		max-height: 40rem;
+	}
 	.photogallery-wrp .photogallery .slider-buttons {
 		width: 50rem;
-		top: 23rem;
+		top: calc(50% + 3rem);
+		left: calc(50% - 25rem);
 	}
 	.photogallery-wrp .photogallery .slider-buttons .next {
 		transform: scale(1) rotate(90deg);
 	}
 	.photogallery-wrp .photogallery .slider-buttons .prev {
 		transform: scale(1) rotate(-90deg);
-	} 
+	}
 }
 
 @media (min-width: 700px) {
 	.photogallery-wrp .photogallery .photo {
-		width: 60rem;
+		height: auto; 
+		width: auto; 
+		max-width: 60rem; 
+		max-height: 60rem;
 	} 
 	.photogallery-wrp .photogallery .slider-buttons {
 		width: 70rem;
-		top: 30rem;
+		top: calc(50% + 3rem);
+		left: calc(50% - 35rem);
 	}
 	.photogallery-wrp .photogallery .slider-buttons .next {
 		transform: scale(1) rotate(90deg);
@@ -903,11 +914,13 @@ body .row {
 
 @media (min-width: 1200px) {
 	.photogallery-wrp .photogallery .photo {
-		width: 110rem;
-	} 
+		max-width: 110rem; 
+		max-height: 100rem;
+	}
 	.photogallery-wrp .photogallery .slider-buttons {
 		width: 120rem;
-		top: 50rem;
+		top: calc(50% + 3rem);
+		left: calc(50% - 60rem);
 	}
 	.photogallery-wrp .photogallery .slider-buttons .next {
 		transform: scale(1) rotate(90deg);
