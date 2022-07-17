@@ -1131,7 +1131,8 @@ body .row {
 
 .questionnaire-holder .questions-form .name input {
 	width: 250px;
-	padding-left: 10px;
+	text-align: center;
+	margin-left: 10px;
 	border: none;
 	border-bottom: 1px dashed #333;
 	background-color: transparent;
