@@ -648,6 +648,14 @@ body .row {
 	color: #333;
 	line-height: 30px;
 }
+
+.face-programm-wrp .face-programm .programm-wrp .programm .rows .row .info .in-process {
+	font-family: Cera;
+	font-size: 1.2rem;
+	color: #333;
+	line-height: 30px;
+}
+
 .face-programm-wrp .face-programm .programm-wrp .programm .rows .row:nth-child(4n+1) .info a {
 	color: #385723;
 }
@@ -1256,7 +1264,6 @@ body .row {
 	
 	.questionnaire .name {
 		font-size: 20px;
-		height: 50px;
 	}
 	
 	.questions-form {
