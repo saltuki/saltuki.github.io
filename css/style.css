@@ -660,7 +660,8 @@ body .row {
 	line-height: 45px;
 	text-align: center;
 }
-.inviting-wrp .inviting .letter-wrp .inv-text {
+.inviting-wrp .inviting .letter-wrp .inv-text,
+.inviting-wrp .inviting .letter-wrp .inv-text-single {
 	position: relative;
 	margin-top: 2rem;
 	width: 90%;
@@ -669,25 +670,36 @@ body .row {
 	color: #333;
 	line-height: 23px;
 	text-align: center;
+	display: none;
 }
-.inviting-wrp .inviting .letter-wrp .inv-text p {
+.inviting-wrp .inviting .letter-wrp .inv-text.visible,
+.inviting-wrp .inviting .letter-wrp .inv-text-single.visible{
+	display: block;
+}
+.inviting-wrp .inviting .letter-wrp .inv-text p,
+.inviting-wrp .inviting .letter-wrp .inv-text-single p {
 	margin-bottom: 29px;
 }
 .inviting-wrp .inviting .letter-wrp .dots {
 	position: relative;
 	display: flex;
 	width: 90%;
-	margin: 2rem auto;
+	margin: 3rem auto;
 	justify-content: space-between;
-	/* padding: 2rem 0; */
 }
 .inviting-wrp .inviting .letter-wrp .dots .dot {
-	height: 6.5rem;
-	width: 6.5rem;
+	height: 4.5rem;
+	width: 4.5rem;
 	border-radius: 50%;
 	display: inline-block;
  }
  
+@media (min-width: 500px) {
+	.inviting-wrp .inviting .letter-wrp .dots .dot {
+		height: 6.5rem;
+		width: 6.5rem;
+	 } 
+}
  
 .inviting-wrp .inviting .letter-wrp .dots .dot1 {
 	background-color: #385723
@@ -724,6 +736,7 @@ body .row {
 	.inviting-wrp .inviting .letter-wrp .letter {
 		padding-left: 108px;
 		padding-top: 82px;
+		padding-bottom: 3rem;
 
 		align-items: flex-start;
 
@@ -734,7 +747,8 @@ body .row {
 		text-align: start;
 	}
 
-	.inviting-wrp .inviting .letter-wrp .letter .inv-text {
+	.inviting-wrp .inviting .letter-wrp .letter .inv-text,
+	.inviting-wrp .inviting .letter-wrp .letter .inv-text-single {
 		text-align: start;
 	}
 
