@@ -588,14 +588,12 @@
 			"93746492": {
 				greeting: "Привет",
 				guestName1: "Андрей!",
-				idName: "Макалев",
-				possibleSingle: true
+				idName: "Макалев"
 			},
 			"587885711": {
 				greeting: "Привет",
 				guestName1: "Ромыч",
-				idName: "Иванов",
-				possibleSingle: true
+				idName: "Иванов"
 			},
 			"499380193": {
 				greeting: "Дорогие наши",
@@ -606,8 +604,7 @@
 			"785392180": {
 				greeting: "Привет",
 				guestName1: "Кирилл",
-				idName: "Баталин",
-				possibleSingle: true
+				idName: "Баталин"
 			},
 			"583583252": {
 				greeting: "Охаё",
@@ -618,8 +615,7 @@
 			"657148318": {
 				greeting: "Ас-саляму алейкум",
 				guestName1: "Кристина",
-				idName: "Марченко",
-				possibleSingle: true
+				idName: "Марченко"
 			},
 			"618206369": {
 				greeting: "♂ Wee wee ♂",
@@ -630,26 +626,22 @@
 			"24400919": {
 				greeting: "Дорогая наша",
 				guestName1: "Таня",
-				idName: "Дементьева",
-				possibleSingle: true
+				idName: "Дементьева"
 			},
 			"216269026": {
 				greeting: "Дорогая",
 				guestName1: "Ира",
-				idName: "Мяэкиви",
-				possibleSingle: true
+				idName: "Мяэкиви"
 			},
 			"439775736": {
 				greeting: "Дорогая",
 				guestName1: "Катя",
-				idName: "Дьякова",
-				possibleSingle: true
+				idName: "Дьякова"
 			},
 			"9870204": {
 				greeting: "Дорогая",
 				guestName1: "Варя",
-				idName: "Володина",
-				possibleSingle: true
+				idName: "Володина"
 			},
 			"24259503": {
 				greeting: "Привет",
@@ -699,11 +691,21 @@
 				idName: "Веренич",
 				knownSingle: true
 			},
+			"test1": {
+				greeting: "Привет",
+				guestName1: "Тестовый который один",
+				idName: "Тестовый"
+			},
+			"test2": {
+				greeting: "Привет",
+				guestName1: "Тестовый которых два - 1",
+				guestName2: "Тестовый которых два - 2",
+				idName: "Тестовый"
+			},
 			"default": {
 				greeting: "Привет",
 				guestName1: "Таинственный Незнакомец",
-				idName: "",
-				possibleSingle: true
+				idName: ""
 			},
 		}
 
@@ -722,23 +724,26 @@
 		var guestNameElement = document.getElementById("guest_name");
 		greetingElement.innerHTML = guestData.greeting;
 		guestNameElement.innerHTML = [guestData.guestName1, guestData.guestName2].filter(x => x).join(' и ');
-		var classForInvitationText = (guestData.knownSingle || guestData.possibleSingle) ? "inv-text-single" : "inv-text"
-		console.log(classForInvitationText)
-		$($(`.${classForInvitationText}`)[0]).addClass("visible")
 
 		$(".questions-form.first .guest-name-input")[0].value = guestData.guestName1;
 		$("#second-name-input")[0].value = guestData.idName;
 
 		if (guestData.guestName2){
+			$($(".inv-text")[0]).addClass("visible")
+
 			$(".questions-form.second")[0].style = "display: auto";
 			$(".questions-form.second .guest-name-input")[0].value = guestData.guestName2;
 
 			$("#agree-label")[0].innerHTML = "Конечно, мы будем!";
 			$("#disagree-label")[0].innerHTML = "Мы не придем";
 		}
-		else if (!guestData.knownSingle){
-			$("#need-plus-one")[0].style = "display: auto";
-			$(".questions-form.second .guest-name-input")[0].removeAttribute("readonly");
+		else {
+			$($(".inv-text-single")[0]).addClass("visible")
+
+			if (!guestData.knownSingle) {
+				$("#need-plus-one")[0].style = "display: auto";
+				$(".questions-form.second .guest-name-input")[0].removeAttribute("readonly");
+			}
 		}
 
 	</script>
